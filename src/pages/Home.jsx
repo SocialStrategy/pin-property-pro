@@ -3,21 +3,21 @@ import { MessageCircle, MapPin, Shield, Users, Star, Instagram, Phone, CheckCirc
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-red-50/30">
+    <div className="min-h-screen" style={{background: 'linear-gradient(to bottom, #F9F9DC, #F5F5D0)'}}>
       {/* Hero Section */}
-      <section className="relative py-24 lg:py-32 bg-gradient-to-br from-white via-red-50/20 to-red-50">
+      <section className="relative py-24 lg:py-32" style={{background: 'linear-gradient(135deg, #F9F9DC 0%, #F5F5D0 50%, #E8E8C8 100%)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
             <div className="space-y-8">
-              <div className="inline-flex items-center gap-2 bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium" style={{backgroundColor: '#800020', color: 'white'}}>
                 <Award className="w-4 h-4" />
                 Bangkok's Premier Real Estate Expert
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
                 Find Your{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-800">
+                <span className="text-transparent bg-clip-text" style={{background: 'linear-gradient(45deg, #800020, #660019)', WebkitBackgroundClip: 'text'}}>
                   Dream Home
                 </span>
                 {' '}in Bangkok
@@ -67,7 +67,7 @@ const Home = () => {
                       className="w-20 h-20 rounded-2xl object-cover shadow-xl border-2 border-red-100"
                     />
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-gray-900">Pin Property Pro</h3>
+                      <h3 className="text-2xl font-bold text-gray-900">Pin Hemmawan</h3>
                       <p className="text-red-600 font-medium">Bangkok Real Estate Specialist</p>
                       <div className="flex items-center gap-1 mt-2">
                         {[...Array(5)].map((_, i) => (
@@ -104,11 +104,11 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24" style={{backgroundColor: '#F9F9DC'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Why Choose Pin Property Pro?
+              Why Choose Pin Hemmawan?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Experience the difference of working with Bangkok's most trusted real estate professional.
@@ -150,17 +150,17 @@ const Home = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-red-600 via-red-700 to-red-800 text-white">
+      <section className="py-24 text-white" style={{background: 'linear-gradient(135deg, #800020 0%, #660019 50%, #4d0013 100%)'}}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl lg:text-6xl font-bold mb-8">
             Ready to Find Your Perfect Home?
           </h2>
-          <p className="text-xl lg:text-2xl text-red-100 max-w-3xl mx-auto mb-12">
+          <p className="text-xl lg:text-2xl max-w-3xl mx-auto mb-12" style={{color: '#F9F9DC'}}>
             Don't waste time with unreliable agents or fake listings. Get professional service and verified properties from Bangkok's trusted real estate expert.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link to="/contact" className="bg-white text-red-700 hover:bg-red-50 font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 text-center">
+            <Link to="/contact" className="font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 text-center" style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
               <MessageCircle className="w-6 h-6 inline mr-3" />
               Schedule Free Consultation
             </Link>

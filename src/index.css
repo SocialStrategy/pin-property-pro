@@ -8,17 +8,38 @@
   }
 }
 
+:root {
+  --burgundy: #800020;
+  --cream: #F9F9DC;
+  --taupe: #8A7E72;
+}
+
 @layer components {
   .btn-primary {
-    @apply bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+    @apply font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+    background-color: var(--burgundy);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #660019;
   }
   
   .btn-secondary {
-    @apply bg-white border border-red-600 text-red-600 hover:bg-red-50 font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+    @apply font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+    background-color: var(--cream);
+    border: 2px solid var(--burgundy);
+    color: var(--burgundy);
+  }
+  
+  .btn-secondary:hover {
+    background-color: #f5f5d0;
   }
   
   .card {
-    @apply bg-white rounded-xl shadow-lg border border-gray-100 p-6;
+    @apply rounded-xl shadow-lg border p-6;
+    background-color: var(--cream);
+    border-color: var(--taupe);
   }
 }
 

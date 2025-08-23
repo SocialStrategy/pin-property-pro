@@ -1,80 +1,56 @@
 import { Link } from 'react-router-dom'
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import { Badge } from "../components/ui/badge"
-import { Calendar, Clock, MapPin, DollarSign, User } from 'lucide-react'
+import { Calendar, MapPin, User } from 'lucide-react'
 
 const Blog = () => {
   const blogPosts = [
     {
-      id: 'sarah-melbourne-sukhumvit',
-      title: 'From Melbourne to Sukhumvit: Sarah\'s Luxury Condo Success Story',
-      excerpt: 'How I helped Sarah, a marketing executive from Melbourne, find her perfect 2-bedroom luxury condo in the heart of Sukhumvit within just 3 days.',
+      id: 'bangkok-neighborhood-guide-2025',
+      title: 'The Ultimate Bangkok Neighborhood Guide for Expats (2025)',
+      excerpt: 'Relocating to Bangkok? Expert realtor Pin Hemmawan shares her ultimate 2025 guide to finding the perfect expat neighborhood for your lifestyle, from family-friendly Bang Na to trendy Thong Lo.',
       date: '2025-01-16',
-      readTime: '4 min read',
-      category: 'Case Study',
-      nationality: 'Australia',
-      area: 'Sukhumvit',
-      budget: '฿80,000/month',
+      category: 'Neighborhood Guide',
       image: '/images/sukhumvit.jpg'
     },
     {
-      id: 'james-london-sathorn',
-      title: 'Investment Banking Executive Finds His Bangkok Base in Sathorn',
-      excerpt: 'James from London needed a premium location close to the financial district. Here\'s how we secured him a stunning high-rise condo in Sathorn.',
+      id: 'bangkok-rental-scams-mistakes',
+      title: '7 Bangkok Rental Scams & Mistakes to Avoid',
+      excerpt: 'New to renting in Bangkok? Don\'t learn the hard way. Real estate expert Pin Hemmawan reveals 7 common mistakes and potential scams that new expats face, and how to protect yourself.',
       date: '2025-01-09',
-      readTime: '5 min read',
-      category: 'Case Study',
-      nationality: 'UK',
-      area: 'Sathorn',
-      budget: '฿120,000/month',
+      category: 'Safety Guide',
       image: '/images/sathorn.jpg'
     },
     {
-      id: 'michael-nyc-thonglor',
-      title: 'Tech Entrepreneur\'s Dream Home: A Modern Thonglor Penthouse',
-      excerpt: 'Michael relocated from New York for his startup. We found him the perfect modern penthouse in trendy Thonglor with all the amenities he needed.',
+      id: 'furnished-vs-unfurnished-bangkok',
+      title: 'Furnished vs. Unfurnished Condo in Bangkok: A Complete Cost Breakdown',
+      excerpt: 'Should you rent a furnished or unfurnished condo in Bangkok? Real estate expert Pin Hemmawan provides a complete cost and convenience breakdown to help you make the best financial decision.',
       date: '2025-01-02',
-      readTime: '6 min read',
-      category: 'Case Study',
-      nationality: 'USA',
-      area: 'Thonglor',
-      budget: '฿150,000/month',
+      category: 'Financial Guide',
       image: '/images/thonglor.jpg'
     },
     {
-      id: 'emma-manchester-ari',
-      title: 'Young Professional Discovers Hidden Gem in Ari District',
-      excerpt: 'Emma from Manchester wanted something unique and artistic. We found her a charming boutique condo in the creative Ari neighborhood.',
+      id: 'thai-rental-contract-guide',
+      title: 'How to Read a Thai Rental Contract (Key Clauses Explained)',
+      excerpt: 'Feeling intimidated by your Thai rental agreement? You\'re not alone. Expert Pin Hemmawan demystifies the legal jargon and explains 5 key clauses every expat renter must understand.',
       date: '2024-12-26',
-      readTime: '4 min read',
-      category: 'Case Study',
-      nationality: 'UK',
-      area: 'Ari',
-      budget: '฿45,000/month',
+      category: 'Legal Guide',
       image: '/images/ari.jpg'
     },
     {
-      id: 'david-singapore-onnut',
-      title: 'Smart Investment: Singapore Expat Finds Value in On Nut',
-      excerpt: 'David from Singapore wanted maximum value for money. We showed him why On Nut is Bangkok\'s best-kept secret for savvy investors.',
+      id: 'bangkok-condo-living-costs',
+      title: 'The Real Cost of Living in a Bangkok Condo (Beyond the Rent)',
+      excerpt: 'Your monthly rent is just the beginning. Expert Pin Hemmawan uncovers the hidden costs of Bangkok condo living, from electricity bills to internet, so you can budget accurately.',
       date: '2024-12-19',
-      readTime: '5 min read',
-      category: 'Case Study',
-      nationality: 'Singapore',
-      area: 'On Nut',
-      budget: '฿35,000/month',
+      category: 'Budget Guide',
       image: '/images/onnut.jpg'
     },
     {
-      id: 'sophie-perth-riverside',
-      title: 'Riverside Luxury: Perth Native Finds Her Bangkok Sanctuary',
-      excerpt: 'Sophie from Perth dreamed of river views and luxury amenities. We delivered with a stunning riverside condo that exceeded her expectations.',
+      id: 'house-vs-condo-bangkok',
+      title: 'Renting a House vs. a Condo in Bangkok: Which is Better for You?',
+      excerpt: 'Dreaming of a garden, or craving the convenience of a high-rise? Bangkok real estate expert Pin Hemmawan gives a realistic guide to the pros and cons of renting a house versus a condo.',
       date: '2024-12-12',
-      readTime: '4 min read',
-      category: 'Case Study',
-      nationality: 'Australia',
-      area: 'Riverside',
-      budget: '฿95,000/month',
+      category: 'Property Types',
       image: '/images/riverside.jpg'
     }
   ]
@@ -84,26 +60,15 @@ const Blog = () => {
     return new Date(dateString).toLocaleDateString('en-US', options)
   }
 
-  const getFlagEmoji = (nationality) => {
-    const flags = {
-      'Australia': '🇦🇺',
-      'UK': '🇬🇧',
-      'USA': '🇺🇸',
-      'Singapore': '🇸🇬'
-    }
-    return flags[nationality] || '🌍'
-  }
-
   return (
-    <div className="min-h-screen py-20 bg-gradient-to-b from-white to-red-50/30">
+    <div className="min-h-screen py-20" style={{background: 'linear-gradient(to bottom, #F9F9DC, #F5F5D0)'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Client Success Stories
+            Bangkok Real Estate Insights
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Real stories from real clients who found their perfect Bangkok homes. 
-            See how Pin Property Pro delivers results for expats from around the world.
+            Expert advice and insider tips from Pin Hemmawan to help you navigate Bangkok's rental market with confidence.
           </p>
         </div>
 
@@ -113,23 +78,18 @@ const Blog = () => {
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={post.image}
-                  alt={`${post.area} area in Bangkok`}
+                  alt={`${post.title} - Bangkok real estate guide`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4">
-                  <Badge className="bg-red-600 text-white">
+                  <Badge style={{backgroundColor: '#800020', color: 'white'}}>
                     {post.category}
-                  </Badge>
-                </div>
-                <div className="absolute top-4 right-4">
-                  <Badge className="bg-white text-gray-900">
-                    {getFlagEmoji(post.nationality)} {post.nationality}
                   </Badge>
                 </div>
               </div>
               
               <CardHeader>
-                <CardTitle className="text-xl leading-tight hover:text-red-600 transition-colors">
+                <CardTitle className="text-xl leading-tight hover:opacity-80 transition-opacity">
                   <Link to={`/blog/${post.id}`}>
                     {post.title}
                   </Link>
@@ -141,50 +101,37 @@ const Blog = () => {
                   {post.excerpt}
                 </p>
                 
-                <div className="grid grid-cols-2 gap-2 text-sm text-gray-500">
-                  <div className="flex items-center gap-1">
-                    <MapPin className="w-4 h-4" />
-                    {post.area}
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <DollarSign className="w-4 h-4" />
-                    {post.budget}
-                  </div>
-                </div>
-                
                 <div className="flex items-center justify-between text-sm text-gray-500 pt-4 border-t">
                   <div className="flex items-center gap-1">
                     <Calendar className="w-4 h-4" />
                     {formatDate(post.date)}
                   </div>
-                  <div className="flex items-center gap-1">
-                    <Clock className="w-4 h-4" />
-                    {post.readTime}
-                  </div>
                 </div>
                 
                 <Link 
                   to={`/blog/${post.id}`}
-                  className="inline-flex items-center text-red-600 hover:text-red-700 font-medium mt-4"
+                  className="inline-flex items-center font-medium mt-4 hover:opacity-80 transition-opacity"
+                  style={{color: '#800020'}}
                 >
-                  Read Full Story →
+                  Read Full Guide →
                 </Link>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="text-center mt-16 p-8 bg-red-600 text-white rounded-2xl">
-          <h2 className="text-3xl font-bold mb-4">Ready to Write Your Own Success Story?</h2>
-          <p className="text-red-100 mb-6 text-lg">
-            Join hundreds of satisfied clients who found their perfect Bangkok home with Pin Property Pro.
+        <div className="text-center mt-16 p-8 rounded-2xl" style={{backgroundColor: '#800020', color: 'white'}}>
+          <h2 className="text-3xl font-bold mb-4">Need Personal Guidance?</h2>
+          <p className="mb-6 text-lg" style={{color: '#F9F9DC'}}>
+            Get expert advice tailored to your specific needs and budget.
           </p>
           <Link 
             to="/contact" 
-            className="bg-white text-red-600 hover:bg-red-50 font-bold px-8 py-3 rounded-lg transition-colors inline-flex items-center gap-2"
+            className="font-bold px-8 py-3 rounded-lg transition-colors inline-flex items-center gap-2 hover:opacity-90"
+            style={{backgroundColor: '#F9F9DC', color: '#800020'}}
           >
             <User className="w-5 h-5" />
-            Start Your Journey
+            Contact Pin Today
           </Link>
         </div>
       </div>

@@ -1,159 +1,31 @@
 import { useParams, Link } from 'react-router-dom'
-import { Calendar, Clock, MapPin, DollarSign, ArrowLeft, User } from 'lucide-react'
-import { Badge } from "../components/ui/badge"
+import { ArrowLeft } from 'lucide-react'
 
 const BlogPost = () => {
   const { id } = useParams()
 
-  const blogPosts = {
-    'sarah-melbourne-sukhumvit': {
-      title: 'From Melbourne to Sukhumvit: Sarah\'s Luxury Condo Success Story',
-      date: '2025-01-16',
-      readTime: '4 min read',
-      category: 'Case Study',
-      nationality: 'Australia',
-      area: 'Sukhumvit',
-      budget: '฿80,000/month',
-      image: '/images/sukhumvit.jpg',
-      content: `Sarah, a 32-year-old marketing executive from Melbourne, was relocating to Bangkok for a senior position at a multinational company. With only two weeks to find accommodation before her start date, she contacted Pin Property Pro for help.
-
-**The Challenge**
-Sarah needed a luxury 2-bedroom condo in Sukhumvit with modern amenities, close to BTS stations, and within her budget of ฿80,000 per month. She also wanted a building with good security and international residents.
-
-**Our Solution**
-Within 24 hours, I had shortlisted 5 properties that matched her criteria. We arranged virtual tours for initial screening, then conducted in-person visits for her top 3 choices during her house-hunting trip.
-
-**The Result**
-Sarah fell in love with a stunning 85-sqm condo on the 25th floor of a premium building near Phrom Phong BTS. The unit featured floor-to-ceiling windows, a modern kitchen, and access to world-class facilities including a rooftop infinity pool.
-
-We secured the property at ฿78,000/month - under her budget - and handled all paperwork, utility connections, and move-in coordination.
-
-**Client Feedback**
-"Pin made my Bangkok move completely stress-free. The condo exceeded my expectations, and the entire process was smooth and professional. I couldn't have asked for better service!"
-
-Today, Sarah has been happily living in her Sukhumvit home for 6 months and has referred three colleagues to Pin Property Pro.`
-    }
-  }
-
-  const post = blogPosts[id]
-
-  if (!post) {
-    return (
-      <div className="min-h-screen py-20 flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Post Not Found</h1>
-          <p className="text-gray-600 mb-6">The blog post you're looking for doesn't exist.</p>
-          <Link to="/blog" className="text-red-600 hover:text-red-700 font-medium">
-            ← Back to Blog
-          </Link>
-        </div>
-      </div>
-    )
-  }
-
-  const getFlagEmoji = (nationality) => {
-    const flags = {
-      'Australia': '🇦🇺',
-      'UK': '🇬🇧', 
-      'USA': '🇺🇸',
-      'Singapore': '🇸🇬'
-    }
-    return flags[nationality] || '🌍'
-  }
-
-  const formatDate = (dateString) => {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' }
-    return new Date(dateString).toLocaleDateString('en-US', options)
-  }
-
   return (
-    <div className="min-h-screen py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link 
-            to="/blog"
-            className="inline-flex items-center text-red-600 hover:text-red-700 font-medium mb-8"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Blog
-          </Link>
+    <div className="min-h-screen py-20" style={{background: 'linear-gradient(to bottom, #F9F9DC, #F5F5D0)'}}>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Link 
+          to="/blog"
+          className="inline-flex items-center font-medium mb-8 hover:opacity-80"
+          style={{color: '#800020'}}
+        >
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to Blog
+        </Link>
 
-          <article className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="relative h-64 md:h-80">
-              <img
-                src={post.image}
-                alt={`${post.area} area in Bangkok`}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <div className="flex items-center gap-2 mb-2">
-                  <Badge className="bg-red-600 text-white">
-                    {post.category}
-                  </Badge>
-                  <Badge className="bg-white text-gray-900">
-                    {getFlagEmoji(post.nationality)} {post.nationality}
-                  </Badge>
-                </div>
-                <h1 className="text-3xl md:text-4xl font-bold leading-tight">
-                  {post.title}
-                </h1>
-              </div>
-            </div>
-
-            <div className="p-8">
-              <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-8 pb-6 border-b">
-                <div className="flex items-center gap-1">
-                  <Calendar className="w-4 h-4" />
-                  {formatDate(post.date)}
-                </div>
-                <div className="flex items-center gap-1">
-                  <Clock className="w-4 h-4" />
-                  {post.readTime}
-                </div>
-                <div className="flex items-center gap-1">
-                  <MapPin className="w-4 h-4" />
-                  {post.area}
-                </div>
-                <div className="flex items-center gap-1">
-                  <DollarSign className="w-4 h-4" />
-                  {post.budget}
-                </div>
-              </div>
-
-              <div className="prose max-w-none">
-                {post.content.split('\n\n').map((paragraph, index) => {
-                  if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-                    return (
-                      <h3 key={index} className="text-xl font-bold text-gray-900 mt-8 mb-4">
-                        {paragraph.replace(/\*\*/g, '')}
-                      </h3>
-                    )
-                  }
-                  return (
-                    <p key={index} className="text-gray-700 leading-relaxed mb-4">
-                      {paragraph}
-                    </p>
-                  )
-                })}
-              </div>
-
-              <div className="mt-12 p-6 bg-red-50 rounded-xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Ready to Find Your Perfect Bangkok Home?</h3>
-                <p className="text-gray-600 mb-4">
-                  Experience the same professional service that helped Sarah find her dream condo.
-                </p>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center bg-red-600 text-white hover:bg-red-700 font-bold px-6 py-3 rounded-lg transition-colors"
-                >
-                  <User className="w-5 h-5 mr-2" />
-                  Start Your Search
-                </Link>
-              </div>
-            </div>
-          </article>
+        <div className="rounded-2xl shadow-lg overflow-hidden p-8" style={{backgroundColor: '#F9F9DC'}}>
+          <h1 className="text-4xl font-bold text-gray-900 mb-6">
+            Blog Post: {id}
+          </h1>
+          <p className="text-gray-700 leading-relaxed">
+            This blog post content will be available soon. Please check back later or contact Pin Hemmawan for more information.
+          </p>
         </div>
       </div>
+    </div>
   )
 }
 
