@@ -33,4 +33,6 @@ pnpm-debug.log*
 # Temporary files
 *.tmp
 *.temp
-node_modules
+
+# Old website folder
+website/
