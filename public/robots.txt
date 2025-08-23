@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pinpropertypro.com/sitemap.xml
+
+# Disallow sensitive areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /node_modules/
+

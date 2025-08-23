@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Property Pro - Premier Bangkok Real Estate Agent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cream': {
+                            50: '#fefcf7',
+                            100: '#e8ddd4',
+                            200: '#f5f5dc'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+        .hover-scale:hover { transform: scale(1.05); }
+        .hover-shadow:hover { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-white to-red-50/30">
+    <!-- Modern Navbar -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-xl sticky top-0 z-50 border-b border-red-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center gap-3 group">
+                        <div class="w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 hover-scale">
+                            <i class="fas fa-home text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-gray-900 group-hover:text-red-700 transition-colors">Pin Property Pro</h1>
+                            <p class="text-sm text-red-600 font-medium">Bangkok Real Estate Expert</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#" class="px-4 py-2 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-red-600 to-red-700 shadow-lg">Home</a>
+                    <a href="#" class="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-red-700 hover:bg-red-50 hover-scale transition-all duration-300">Areas</a>
+                    <a href="#" class="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-red-700 hover:bg-red-50 hover-scale transition-all duration-300">Testimonials</a>
+                    <a href="#" class="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-red-700 hover:bg-red-50 hover-scale transition-all duration-300">Contact</a>
+                    <div class="flex items-center gap-3">
+                        <a href="https://www.instagram.com/pin.propertypro/" target="_blank" class="flex items-center gap-2 px-4 py-2 border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white rounded-xl transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                            Follow
+                        </a>
+                        <a href="#contact" class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-xl shadow-lg hover:shadow-xl hover-scale transition-all duration-300">
+                            <i class="fas fa-comment"></i>
+                            Contact Pin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modern Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-white via-red-50/20 to-cream-50 py-24 lg:py-32">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23dc2626\' fill-opacity=\'0.1\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'2\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left Content -->
+                <div class="space-y-10">
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center gap-2 bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium">
+                            <i class="fas fa-award"></i>
+                            Bangkok's Premier Real Estate Expert
+                        </div>
+                        
+                        <h1 class="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+                            Find Your
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-800">
+                                Dream Home
+                            </span>
+                            in Bangkok
+                        </h1>
+                        
+                        <p class="text-xl text-gray-600 leading-relaxed max-w-lg">
+                            Professional real estate services with personalized attention. From luxury condos to perfect apartments - I'll help you discover your ideal Bangkok home.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold rounded-xl shadow-xl hover:shadow-2xl hover-scale transition-all duration-300">
+                            <i class="fas fa-comment"></i>
+                            Schedule Free Consultation
+                        </a>
+                        <a href="#areas" class="inline-flex items-center gap-2 px-8 py-4 border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-semibold rounded-xl transition-all duration-300">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Explore Areas
+                        </a>
+                    </div>
+
+                    <!-- Social Proof -->
+                    <div class="flex items-center gap-8 pt-6 border-t border-gray-200">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-gray-900">500+</div>
+                            <div class="text-sm text-gray-600">Happy Clients</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-gray-900">5★</div>
+                            <div class="text-sm text-gray-600">Average Rating</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-gray-900">24/7</div>
+                            <div class="text-sm text-gray-600">Support</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Pin's Profile Card -->
+                <div class="relative">
+                    <!-- Floating Elements -->
+                    <div class="absolute -top-8 -right-8 w-24 h-24 bg-gradient-to-br from-red-100 to-red-200 rounded-full opacity-60 animate-pulse"></div>
+                    <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-cream-100 to-cream-200 rounded-full opacity-40 animate-pulse" style="animation-delay: 1s;"></div>
+                    
+                    <div class="relative bg-white rounded-3xl p-8 shadow-2xl border border-red-100 hover:shadow-3xl transition-all duration-500 hover-scale">
+                        <div class="space-y-6">
+                            <!-- Profile Header -->
+                            <div class="flex items-start gap-4">
+                                <div class="relative">
+                                    <div class="w-20 h-20 bg-gradient-to-br from-red-600 to-red-800 rounded-2xl flex items-center justify-center shadow-xl">
+                                        <i class="fas fa-home text-white text-2xl"></i>
+                                    </div>
+                                    <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white flex items-center justify-center">
+                                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-2xl font-bold text-gray-900">Pin Property Pro</h3>
+                                    <p class="text-red-600 font-medium">Bangkok Real Estate Specialist</p>
+                                    <div class="flex items-center gap-1 mt-2">
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <i class="fas fa-star text-yellow-400"></i>
+                                        <span class="text-sm text-gray-500 ml-2">5.0 Rating</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quote -->
+                            <div class="bg-gradient-to-r from-red-50 to-cream-50 p-6 rounded-2xl border-l-4 border-red-600">
+                                <p class="text-gray-700 italic text-lg leading-relaxed">
+                                    "Your dream home awaits in Bangkok. Let me guide you to the perfect property with personalized service and expert local knowledge."
+                                </p>
+                            </div>
+
+                            <!-- Contact Actions -->
+                            <div class="grid grid-cols-2 gap-3">
+                                <a href="https://wa.me/66891234567" target="_blank" class="flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white rounded-xl transition-all duration-300">
+                                    <i class="fas fa-comment"></i>
+                                    WhatsApp
+                                </a>
+                                <a href="https://www.instagram.com/pin.propertypro/" target="_blank" class="flex items-center justify-center gap-2 px-4 py-3 border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white rounded-xl transition-all duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                    Follow
+                                </a>
+                            </div>
+
+                            <!-- Instagram Badge -->
+                            <div class="flex items-center justify-center gap-2 text-sm text-gray-600 bg-gray-50 py-3 rounded-xl">
+                                <i class="fab fa-instagram"></i>
+                                <span>@pin.propertypro</span>
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <span>Active Now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <div class="inline-flex items-center gap-2 bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    <i class="fas fa-sparkles"></i>
+                    Premium Services
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Why Choose Pin Property Pro?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience the difference of working with Bangkok's most trusted real estate professional. 
+                    Personalized service, verified properties, and complete peace of mind.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group bg-gradient-to-br from-white to-red-50/30 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover-scale overflow-hidden relative">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-red-100 to-red-200 rounded-full -translate-y-8 translate-x-8 opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                    <div class="relative">
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                            <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Local Expertise</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Deep knowledge of Bangkok neighborhoods, market trends, and hidden gems. 
+                            I know the best buildings, amenities, and investment opportunities in every district.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group bg-gradient-to-br from-white to-red-50/30 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover-scale overflow-hidden relative">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-red-100 to-red-200 rounded-full -translate-y-8 translate-x-8 opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                    <div class="relative">
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                            <i class="fas fa-shield-alt text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Verified Properties</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            No more ghost listings or fake photos. Every property I show is personally verified, 
+                            available, and accurately represented with real photos and details.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group bg-gradient-to-br from-white to-red-50/30 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover-scale overflow-hidden relative">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-red-100 to-red-200 rounded-full -translate-y-8 translate-x-8 opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                    <div class="relative">
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                            <i class="fas fa-users text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Full Support</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            From initial consultation to move-in day and beyond. I handle negotiations, 
+                            paperwork, utilities setup, and provide ongoing support throughout your stay.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Integration Section -->
+    <section class="py-24 bg-gradient-to-br from-red-50 to-cream-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Follow My Latest Properties
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Stay updated with the newest listings, market insights, and success stories on Instagram.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="bg-white rounded-3xl p-8 shadow-xl">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center">
+                                <i class="fab fa-instagram text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">@pin.propertypro</h3>
+                                <p class="text-gray-600">Bangkok Real Estate Expert</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6">
+                            Get exclusive access to new listings, virtual property tours, client testimonials, 
+                            and insider tips about Bangkok's real estate market.
+                        </p>
+                        <a href="https://www.instagram.com/pin.propertypro/" target="_blank" class="flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-xl transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                            Follow on Instagram
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="aspect-square bg-gradient-to-br from-red-100 to-red-200 rounded-xl mb-3 flex items-center justify-center">
+                            <i class="fas fa-home text-red-600 text-3xl"></i>
+                        </div>
+                        <p class="text-sm text-gray-600">Luxury Condo in Sukhumvit</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="aspect-square bg-gradient-to-br from-red-100 to-red-200 rounded-xl mb-3 flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-red-600 text-3xl"></i>
+                        </div>
+                        <p class="text-sm text-gray-600">Prime Location Tours</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="aspect-square bg-gradient-to-br from-red-100 to-red-200 rounded-xl mb-3 flex items-center justify-center">
+                            <i class="fas fa-star text-red-600 text-3xl"></i>
+                        </div>
+                        <p class="text-sm text-gray-600">Client Success Stories</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="aspect-square bg-gradient-to-br from-red-100 to-red-200 rounded-xl mb-3 flex items-center justify-center">
+                            <i class="fas fa-sparkles text-red-600 text-3xl"></i>
+                        </div>
+                        <p class="text-sm text-gray-600">Market Insights</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-24 bg-gradient-to-br from-red-600 via-red-700 to-red-800 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'40\' height=\'40\' viewBox=\'0 0 40 40\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'white\' fill-opacity=\'0.1\'%3E%3Cpath d=\'M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z\'/%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+        
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="space-y-8">
+                <h2 class="text-4xl lg:text-6xl font-bold text-white leading-tight">
+                    Ready to Find Your
+                    <span class="text-red-200">Perfect Home?</span>
+                </h2>
+                <p class="text-xl lg:text-2xl text-red-100 max-w-3xl mx-auto leading-relaxed">
+                    Don't waste time with unreliable agents or fake listings. 
+                    Get professional service and verified properties from Bangkok's trusted real estate expert.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center pt-8">
+                    <a href="#contact" class="inline-flex items-center gap-3 px-8 py-4 bg-white text-red-700 hover:bg-red-50 font-bold text-lg rounded-xl shadow-2xl hover:shadow-3xl hover-scale transition-all duration-300">
+                        <i class="fas fa-comment"></i>
+                        Schedule Free Consultation
+                    </a>
+                    <a href="https://wa.me/66891234567" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold text-lg rounded-xl shadow-2xl hover:shadow-3xl hover-scale transition-all duration-300">
+                        <i class="fas fa-phone"></i>
+                        WhatsApp Now
+                    </a>
+                </div>
+
+                <div class="flex items-center justify-center gap-6 pt-8 text-red-200">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No Hidden Fees</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Verified Properties</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Contact Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/66891234567" target="_blank" class="w-16 h-16 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-2xl shadow-2xl hover:shadow-3xl hover-scale transition-all duration-300 flex items-center justify-center">
+            <i class="fas fa-comment text-xl"></i>
+        </a>
+    </div>
+</body>
+</html>
