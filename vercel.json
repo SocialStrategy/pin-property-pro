@@ -1,4 +1,5 @@
 {
+  "name": "pin-property-pro",
   "rewrites": [
     {
       "source": "/(.*)",
