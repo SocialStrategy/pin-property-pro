@@ -36,3 +36,4 @@ pnpm-debug.log*
 
 # Old website folder
 website/
+.vercel
