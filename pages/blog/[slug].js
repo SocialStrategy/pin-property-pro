@@ -764,7 +764,8 @@ After 6-12 months, if you find you need more space or prefer a quieter lifestyle
 
 export default function BlogPost() {
   const router = useRouter()
-  const { slug, locale } = router.query
+  const { slug } = router.query
+  const locale = router.asPath.startsWith('/th') ? 'th' : 'en'
   
   const post = blogContent[slug]
   if (!post) {
@@ -852,19 +853,17 @@ export default function BlogPost() {
 
 export async function getStaticPaths() {
   const slugs = Object.keys(blogContent)
-  const paths = slugs.flatMap(slug => [
-    { params: { slug }, locale: 'en' },
-    { params: { slug }, locale: 'th' }
-  ])
+  const paths = slugs.map(slug => ({
+    params: { slug }
+  }))
   
   return { paths, fallback: false }
 }
 
-export async function getStaticProps({ params, locale }) {
+export async function getStaticProps({ params }) {
   return {
     props: {
-      slug: params.slug,
-      locale
+      slug: params.slug
     }
   }
 }

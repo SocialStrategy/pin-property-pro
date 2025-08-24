@@ -3,7 +3,8 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 
 export default function Contact() {
-  const { locale } = useRouter()
+  const router = useRouter()
+  const locale = router.asPath.startsWith('/th') ? 'th' : 'en'
   
   const t = {
     en: {
@@ -181,10 +182,4 @@ export default function Contact() {
   )
 }
 
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      locale
-    }
-  }
-}
+// Static page - no getStaticProps needed

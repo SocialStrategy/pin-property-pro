@@ -5,7 +5,8 @@ import Link from 'next/link'
 // We'll create simplified components for now to avoid context issues
 
 export default function Home() {
-  const { locale } = useRouter()
+  const router = useRouter()
+  const locale = router.asPath.startsWith('/th') ? 'th' : 'en'
   
   const t = {
     en: {
@@ -114,10 +115,4 @@ export default function Home() {
   )
 }
 
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      locale
-    }
-  }
-}
+// Static export - no getStaticProps needed

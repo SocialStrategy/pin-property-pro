@@ -3,7 +3,8 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 
 export default function Blog() {
-  const { locale } = useRouter()
+  const router = useRouter()
+  const locale = router.asPath.startsWith('/th') ? 'th' : 'en'
   
   const t = {
     en: {
@@ -152,10 +153,4 @@ export default function Blog() {
   )
 }
 
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      locale
-    }
-  }
-}
+// Static page - no getStaticProps needed
