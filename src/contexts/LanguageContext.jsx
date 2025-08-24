@@ -32,7 +32,7 @@ const translations = {
   en: {
     // Navigation
     'nav.home': 'Home',
-    'nav.areas': 'Areas',
+    'nav.areas': 'Areas', 
     'nav.testimonials': 'Testimonials',
     'nav.blog': 'Blog',
     'nav.contact': 'Contact',
@@ -43,9 +43,8 @@ const translations = {
     'home.hero.subtitle': 'Professional real estate services with personalized attention. From luxury condos to perfect apartments - I\'ll help you discover your ideal Bangkok home.',
     'home.hero.consultation': 'Schedule Free Consultation',
     'home.hero.explore': 'Explore Areas',
-    'home.stats.clients': 'Happy Clients',
-    'home.stats.rating': 'Average Rating',
-    'home.stats.support': 'Support',
+    'home.stats.rating': 'Average Rating', 
+    'home.stats.support': 'Response Time',
     'home.profile.name': 'Pin Hemmawan',
     'home.profile.title': 'Bangkok Real Estate Specialist',
     'home.profile.rating': 'Rating',
@@ -90,7 +89,21 @@ const translations = {
     'blogpost.notfound.subtitle': 'The blog post you\'re looking for doesn\'t exist.',
     'blogpost.cta.title': 'Ready to Find Your Perfect Bangkok Home?',
     'blogpost.cta.subtitle': 'Get personalized guidance from Pin Hemmawan to find the ideal property for your needs.',
-    'blogpost.cta.contact': 'Contact Pin Today'
+    'blogpost.cta.contact': 'Contact Pin Today',
+    
+    // Blog Posts
+    'blog.neighborhood.title': 'The Ultimate Bangkok Neighborhood Guide for Expats (2025)',
+    'blog.neighborhood.excerpt': 'Relocating to Bangkok? Expert realtor Pin Hemmawan shares her ultimate 2025 guide to finding the perfect expat neighborhood for your lifestyle, from family-friendly Bang Na to trendy Thong Lo.',
+    'blog.scams.title': '7 Bangkok Rental Scams & Mistakes to Avoid',
+    'blog.scams.excerpt': 'New to renting in Bangkok? Don\'t learn the hard way. Real estate expert Pin Hemmawan reveals 7 common mistakes and potential scams that new expats face, and how to protect yourself.',
+    'blog.furnished.title': 'Furnished vs. Unfurnished Condo in Bangkok: A Complete Cost Breakdown',
+    'blog.furnished.excerpt': 'Should you rent a furnished or unfurnished condo in Bangkok? Real estate expert Pin Hemmawan provides a complete cost and convenience breakdown to help you make the best financial decision.',
+    'blog.contract.title': 'How to Read a Thai Rental Contract (Key Clauses Explained)',
+    'blog.contract.excerpt': 'Feeling intimidated by your Thai rental agreement? You\'re not alone. Expert Pin Hemmawan demystifies the legal jargon and explains 5 key clauses every expat renter must understand.',
+    'blog.costs.title': 'The Real Cost of Living in a Bangkok Condo (Beyond the Rent)',
+    'blog.costs.excerpt': 'Your monthly rent is just the beginning. Expert Pin Hemmawan uncovers the hidden costs of Bangkok condo living, from electricity bills to internet, so you can budget accurately.',
+    'blog.house.title': 'Renting a House vs. a Condo in Bangkok: Which is Better for You?',
+    'blog.house.excerpt': 'Dreaming of a garden, or craving the convenience of a high-rise? Bangkok real estate expert Pin Hemmawan gives a realistic guide to the pros and cons of renting a house versus a condo.'
   },
   th: {
     // Navigation
@@ -106,9 +119,9 @@ const translations = {
     'home.hero.subtitle': 'บริการอสังหาริมทรัพย์มืออาชีพด้วยความใส่ใจเป็นรายบุคคล จากคอนโดหรูหราไปจนถึงอพาร์ทเมนท์ที่สมบูรณ์แบบ - ฉันจะช่วยคุณค้นพบบ้านในฝันในกรุงเทพฯ',
     'home.hero.consultation': 'นัดหมายปรึกษาฟรี',
     'home.hero.explore': 'สำรวจพื้นที่',
-    'home.stats.clients': 'ลูกค้าที่พอใจ',
+
     'home.stats.rating': 'คะแนนเฉลี่ย',
-    'home.stats.support': 'การสนับสนุน',
+    'home.stats.support': 'เวลาตอบกลับ',
     'home.profile.name': 'ปิน เหมวรรณ',
     'home.profile.title': 'ผู้เชี่ยวชาญอสังหาริมทรัพย์กรุงเทพฯ',
     'home.profile.rating': 'คะแนน',
@@ -153,7 +166,21 @@ const translations = {
     'blogpost.notfound.subtitle': 'โพสต์บล็อกที่คุณกำลังมองหาไม่มีอยู่',
     'blogpost.cta.title': 'พร้อมที่จะหาบ้านที่สมบูรณ์แบบในกรุงเทพฯ หรือยัง?',
     'blogpost.cta.subtitle': 'รับคำแนะนำเป็นการส่วนตัวจากปิน เหมวรรณ เพื่อหาอสังหาริมทรัพย์ที่เหมาะสมกับความต้องการของคุณ',
-    'blogpost.cta.contact': 'ติดต่อปินวันนี้'
+    'blogpost.cta.contact': 'ติดต่อปินวันนี้',
+    
+    // Blog Posts
+    'blog.neighborhood.title': 'The Ultimate Bangkok Neighborhood Guide for Expats (2025)',
+    'blog.neighborhood.excerpt': 'Relocating to Bangkok? Expert realtor Pin Hemmawan shares her ultimate 2025 guide to finding the perfect expat neighborhood for your lifestyle, from family-friendly Bang Na to trendy Thong Lo.',
+    'blog.scams.title': '7 Bangkok Rental Scams & Mistakes to Avoid',
+    'blog.scams.excerpt': 'New to renting in Bangkok? Don\'t learn the hard way. Real estate expert Pin Hemmawan reveals 7 common mistakes and potential scams that new expats face, and how to protect yourself.',
+    'blog.furnished.title': 'Furnished vs. Unfurnished Condo in Bangkok: A Complete Cost Breakdown',
+    'blog.furnished.excerpt': 'Should you rent a furnished or unfurnished condo in Bangkok? Real estate expert Pin Hemmawan provides a complete cost and convenience breakdown to help you make the best financial decision.',
+    'blog.contract.title': 'How to Read a Thai Rental Contract (Key Clauses Explained)',
+    'blog.contract.excerpt': 'Feeling intimidated by your Thai rental agreement? You\'re not alone. Expert Pin Hemmawan demystifies the legal jargon and explains 5 key clauses every expat renter must understand.',
+    'blog.costs.title': 'The Real Cost of Living in a Bangkok Condo (Beyond the Rent)',
+    'blog.costs.excerpt': 'Your monthly rent is just the beginning. Expert Pin Hemmawan uncovers the hidden costs of Bangkok condo living, from electricity bills to internet, so you can budget accurately.',
+    'blog.house.title': 'Renting a House vs. a Condo in Bangkok: Which is Better for You?',
+    'blog.house.excerpt': 'Dreaming of a garden, or craving the convenience of a high-rise? Bangkok real estate expert Pin Hemmawan gives a realistic guide to the pros and cons of renting a house versus a condo.'
   }
 }
 

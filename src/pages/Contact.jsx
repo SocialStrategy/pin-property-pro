@@ -3,7 +3,7 @@ import { MessageCircle, Instagram, Phone, Mail, MapPin, Clock, Users, Star } fro
 const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert('Thank you for your inquiry! Pin will contact you within 24 hours.')
+    alert('Thank you for your inquiry! Pin will contact you the same day.')
   }
 
   const contactMethods = [
@@ -19,8 +19,8 @@ const Contact = () => {
       icon: MessageCircle,
       title: "WhatsApp",
       description: "International messaging",
-      action: "+66 89 123 4567",
-      link: "https://wa.me/66891234567",
+      action: "+66 95 912 4769",
+      link: "https://wa.me/6695912476",
       primary: true
     },
     {
@@ -35,8 +35,8 @@ const Contact = () => {
       icon: Phone,
       title: "Phone Call",
       description: "Direct consultation",
-      action: "+66 89 123 4567",
-      link: "tel:+66891234567",
+      action: "+66 95 912 4769",
+      link: "tel:+6695912476",
       primary: false
     }
   ]
@@ -51,7 +51,7 @@ const Contact = () => {
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to start your stress-free condo search? Choose your preferred way to connect, 
-            and I'll respond within 24 hours with a personalized consultation plan.
+            and I'll respond the same day with a personalized consultation plan.
           </p>
         </div>
 
@@ -89,17 +89,14 @@ const Contact = () => {
             <div className="card bg-gradient-to-br from-slate-50 to-gray-50">
               <h3 className="font-bold text-gray-900 mb-4">Why Choose Pin?</h3>
               <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <Users className="w-5 h-5 text-blue-600" />
-                  <span className="text-sm text-gray-700">1,152+ Happy Clients</span>
-                </div>
+
                 <div className="flex items-center gap-3">
                   <Star className="w-5 h-5 text-yellow-500" />
                   <span className="text-sm text-gray-700">4.9/5 Average Rating</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-green-600" />
-                  <span className="text-sm text-gray-700">24hr Response Time</span>
+                  <span className="text-sm text-gray-700">Same Day Response</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-purple-600" />
@@ -163,6 +160,7 @@ const Contact = () => {
                     <label className="block text-sm font-medium text-gray-700 mb-2">Monthly Budget (THB)</label>
                     <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500">
                       <option value="">Select budget range</option>
+                      <option value="under-30000">Under ฿30,000</option>
                       <option value="30000-50000">฿30,000 - ฿50,000</option>
                       <option value="50000-80000">฿50,000 - ฿80,000</option>
                       <option value="80000-120000">฿80,000 - ฿120,000</option>
@@ -171,13 +169,21 @@ const Contact = () => {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Preferred Areas</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Desired Move-in Date</label>
                     <input 
-                      type="text" 
-                      placeholder="e.g., Sukhumvit, Sathorn, Thonglor"
+                      type="date" 
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                     />
                   </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Preferred Areas</label>
+                  <input 
+                    type="text" 
+                    placeholder="e.g., Sukhumvit, Sathorn, Thonglor"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                  />
                 </div>
 
                 <div>

@@ -40,15 +40,11 @@ const Home = () => {
               {/* Social Proof */}
               <div className="flex items-center gap-8 pt-6 border-t border-gray-200">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">500+</div>
-                  <div className="text-sm text-gray-600">{t('home.stats.clients')}</div>
-                </div>
-                <div className="text-center">
                   <div className="text-2xl font-bold text-gray-900">5★</div>
                   <div className="text-sm text-gray-600">{t('home.stats.rating')}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">24/7</div>
+                  <div className="text-2xl font-bold text-gray-900">Same Day</div>
                   <div className="text-sm text-gray-600">{t('home.stats.support')}</div>
                 </div>
               </div>
