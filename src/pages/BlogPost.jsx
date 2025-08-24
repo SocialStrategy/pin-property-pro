@@ -380,9 +380,12 @@ There is no "better" option—only the better option for your specific life stag
                     </p>
                   )
                 }
+                // Handle inline bold formatting
+                const formattedParagraph = paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                
                 return (
-                  <p key={index} className="text-gray-700 leading-relaxed mb-4">
-                    {paragraph}
+                  <p key={index} className="text-gray-700 leading-relaxed mb-4" 
+                     dangerouslySetInnerHTML={{ __html: formattedParagraph }}>
                   </p>
                 )
               })}

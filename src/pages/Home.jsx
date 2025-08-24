@@ -68,7 +68,7 @@ const Home = () => {
                         {[...Array(5)].map((_, i) => (
                           <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                         ))}
-                        <span className="text-sm text-gray-500 ml-2">5.0 Rating</span>
+                        <span className="text-sm text-gray-500 ml-2">5.0 {t('home.profile.rating')}</span>
                       </div>
                     </div>
                   </div>
@@ -76,19 +76,19 @@ const Home = () => {
                   {/* Quote */}
                   <div className="bg-gradient-to-r from-red-50 to-red-50 p-6 rounded-2xl border-l-4 border-red-600">
                     <p className="text-gray-700 italic text-lg leading-relaxed">
-                      "Your dream home awaits in Bangkok. Let me guide you to the perfect property with personalized service and expert local knowledge."
+                      "{t('home.profile.quote')}"
                     </p>
                   </div>
 
                   {/* Contact Actions */}
                   <div className="grid grid-cols-2 gap-3">
-                    <a href="https://wa.me/66891234567" target="_blank" rel="noopener noreferrer" className="btn-primary text-center bg-green-600 hover:bg-green-700">
+                    <a href="https://wa.me/66959124769" target="_blank" rel="noopener noreferrer" className="btn-primary text-center bg-green-600 hover:bg-green-700">
                       <MessageCircle className="w-4 h-4 inline mr-2" />
-                      WhatsApp
+                      {t('home.profile.whatsapp')}
                     </a>
                     <a href="https://www.instagram.com/pin.propertypro/" target="_blank" rel="noopener noreferrer" className="btn-secondary text-center">
                       <Instagram className="w-4 h-4 inline mr-2" />
-                      Follow
+                      {t('home.profile.follow')}
                     </a>
                   </div>
                 </div>
@@ -115,9 +115,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Local Expertise</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">{t('home.services.local.title')}</h3>
               <p className="text-gray-600 leading-relaxed">
-                Deep knowledge of Bangkok neighborhoods, market trends, and hidden gems. I know the best buildings, amenities, and investment opportunities.
+                {t('home.services.local.desc')}
               </p>
             </div>
 
@@ -125,9 +125,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6">
                 <Shield className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Verified Properties</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">{t('home.services.verified.title')}</h3>
               <p className="text-gray-600 leading-relaxed">
-                No more ghost listings or fake photos. Every property I show is personally verified, available, and accurately represented.
+                {t('home.services.verified.desc')}
               </p>
             </div>
 
@@ -135,9 +135,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Full Support</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">{t('home.services.support.title')}</h3>
               <p className="text-gray-600 leading-relaxed">
-                From initial consultation to move-in day and beyond. I handle negotiations, paperwork, utilities setup, and ongoing support.
+                {t('home.services.support.desc')}
               </p>
             </div>
           </div>
@@ -148,20 +148,20 @@ const Home = () => {
       <section className="py-24 text-white" style={{background: 'linear-gradient(135deg, #800020 0%, #660019 50%, #4d0013 100%)'}}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl lg:text-6xl font-bold mb-8">
-            Ready to Find Your Perfect Home?
+            {t('home.cta.title')}
           </h2>
           <p className="text-xl lg:text-2xl max-w-3xl mx-auto mb-12" style={{color: '#F9F9DC'}}>
-            Don't waste time with unreliable agents or fake listings. Get professional service and verified properties from Bangkok's trusted real estate expert.
+            {t('home.cta.subtitle')}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link to="/contact" className="font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 text-center" style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
               <MessageCircle className="w-6 h-6 inline mr-3" />
-              Schedule Free Consultation
+              {t('home.cta.consultation')}
             </Link>
-            <a href="https://wa.me/66891234567" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 text-center">
+            <a href="https://wa.me/66959124769" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 text-center">
               <Phone className="w-6 h-6 inline mr-3" />
-              WhatsApp Now
+              {t('home.cta.whatsapp')}
             </a>
           </div>
 
