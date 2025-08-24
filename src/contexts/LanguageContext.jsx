@@ -97,11 +97,11 @@ const translations = {
     'blog.scams.title': '7 Bangkok Rental Scams & Mistakes to Avoid',
     'blog.scams.excerpt': 'New to renting in Bangkok? Don\'t learn the hard way. Real estate expert Pin Hemmawan reveals 7 common mistakes and potential scams that new expats face, and how to protect yourself.',
     'blog.furnished.title': 'Furnished vs. Unfurnished Condo in Bangkok: A Complete Cost Breakdown',
-    'blog.furnished.excerpt': 'Should you rent a furnished or unfurnished condo in Bangkok? Real estate expert Pin Hemmawan provides a complete cost and convenience breakdown to help you make the best financial decision.',
-    'blog.contract.title': 'How to Read a Thai Rental Contract (Key Clauses Explained)',
-    'blog.contract.excerpt': 'Feeling intimidated by your Thai rental agreement? You\'re not alone. Expert Pin Hemmawan demystifies the legal jargon and explains 5 key clauses every expat renter must understand.',
-    'blog.costs.title': 'The Real Cost of Living in a Bangkok Condo (Beyond the Rent)',
-    'blog.costs.excerpt': 'Your monthly rent is just the beginning. Expert Pin Hemmawan uncovers the hidden costs of Bangkok condo living, from electricity bills to internet, so you can budget accurately.',
+    'blog.furnished.excerpt': 'ควรเช่าคอนโดครบเครื่องหรือไม่ครบเครื่องในกรุงเทพฯ? ปิน เหมวรรณ ผู้เชี่ยวชาญอสังหาริมทรัพย์ให้การวิเคราะห์ต้นทุนและความสะดวกสบายอย่างครบถ้วน',
+    'blog.contract.title': 'วิธีอ่านสัญญาเช่าไทย (อธิบายข้อสำคัญ)',
+    'blog.contract.excerpt': 'รู้สึกกลัวสัญญาเช่าภาษาไทย? คุณไม่ได้เป็นคนเดียว ปิน เหมวรรณ ผู้เชี่ยวชาญอธิบายศัพท์กฎหมายและข้อสำคัญ 5 ข้อที่ชาวต่างชาติทุกคนต้องเข้าใจ',
+    'blog.costs.title': 'ต้นทุนจริงของการอยู่คอนโดกรุงเทพฯ (นอกเหนือจากค่าเช่า)',
+    'blog.costs.excerpt': 'ค่าเช่ารายเดือนเป็นเพียงจุดเริ่มต้น ปิน เหมวรรณ ผู้เชี่ยวชาญเผยต้นทุนที่ซ่อนอยู่ของการอยู่คอนโดกรุงเทพฯ ตั้งแต่ค่าไฟฟ้าไปจนถึงอินเทอร์เน็ต',
     'blog.house.title': 'Renting a House vs. a Condo in Bangkok: Which is Better for You?',
     'blog.house.excerpt': 'Dreaming of a garden, or craving the convenience of a high-rise? Bangkok real estate expert Pin Hemmawan gives a realistic guide to the pros and cons of renting a house versus a condo.',
     
@@ -510,10 +510,6 @@ There is no "better" option—only the better option for your specific life stag
     'testimonials.title': 'ลูกค้าของฉันพูดถึงอะไร',
     'testimonials.subtitle': 'เรื่องราวความสำเร็จจริงจากชาวต่างชาติที่พบบ้านในฝันในกรุงเทพฯ ดูว่าทำไมลูกค้าจากทั่วโลกจึงไว้วางใจปิน เหมวรรณ',
     'testimonials.badge': 'เรื่องราวความสำเร็จ',
-    'testimonials.cta.title': 'พร้อมที่จะเข้าร่วมกับลูกค้าที่มีความสุขของฉันหรือยัง?',
-    'testimonials.cta.subtitle': 'สัมผัสบริการที่ยอดเยี่ยมเหมือนกับที่ลูกค้าของฉันชื่นชม',
-    'testimonials.cta.button': 'เริ่มต้นวันนี้',
-    
     // Blog Post
     'blogpost.back': 'กลับไปที่บล็อก',
     'blogpost.notfound.title': 'ไม่พบโพสต์',
@@ -522,17 +518,17 @@ There is no "better" option—only the better option for your specific life stag
     'blogpost.cta.subtitle': 'รับคำแนะนำเป็นการส่วนตัวจากปิน เหมวรรณ เพื่อหาอสังหาริมทรัพย์ที่เหมาะสมกับความต้องการของคุณ',
     'blogpost.cta.contact': 'ติดต่อปินวันนี้',
     
-    // Blog Posts
-    'blog.neighborhood.title': 'The Ultimate Bangkok Neighborhood Guide for Expats (2025)',
-    'blog.neighborhood.excerpt': 'Relocating to Bangkok? Expert realtor Pin Hemmawan shares her ultimate 2025 guide to finding the perfect expat neighborhood for your lifestyle, from family-friendly Bang Na to trendy Thong Lo.',
-    'blog.scams.title': '7 Bangkok Rental Scams & Mistakes to Avoid',
-    'blog.scams.excerpt': 'New to renting in Bangkok? Don\'t learn the hard way. Real estate expert Pin Hemmawan reveals 7 common mistakes and potential scams that new expats face, and how to protect yourself.',
-    'blog.furnished.title': 'Furnished vs. Unfurnished Condo in Bangkok: A Complete Cost Breakdown',
-    'blog.furnished.excerpt': 'Should you rent a furnished or unfurnished condo in Bangkok? Real estate expert Pin Hemmawan provides a complete cost and convenience breakdown to help you make the best financial decision.',
-    'blog.contract.title': 'How to Read a Thai Rental Contract (Key Clauses Explained)',
-    'blog.contract.excerpt': 'Feeling intimidated by your Thai rental agreement? You\'re not alone. Expert Pin Hemmawan demystifies the legal jargon and explains 5 key clauses every expat renter must understand.',
-    'blog.costs.title': 'The Real Cost of Living in a Bangkok Condo (Beyond the Rent)',
-    'blog.costs.excerpt': 'Your monthly rent is just the beginning. Expert Pin Hemmawan uncovers the hidden costs of Bangkok condo living, from electricity bills to internet, so you can budget accurately.',
+    // Blog Posts Thai
+    'blog.neighborhood.title': 'คู่มือย่านกรุงเทพฯ สำหรับชาวต่างชาติ (2025)',
+    'blog.neighborhood.excerpt': 'กำลังย้ายมากรุงเทพฯ? ปิน เหมวรรณ นายหน้าผู้เชี่ยวชาญแบ่งปันคู่มือปี 2025 เพื่อหาย่านที่เหมาะสมกับไลฟ์สไตล์ของคุณ ตั้งแต่บางนาที่เหมาะสำหรับครอบครัวไปจนถึงทองหล่อที่ทันสมัย',
+    'blog.scams.title':     '7 กลโกงและข้อผิดพลาดในการเช่าที่กรุงเทพฯ ที่ต้องหลีกเลี่ยง',
+    'blog.scams.excerpt': 'มาเช่าที่กรุงเทพฯ ใหม่? อย่าเรียนรู้ด้วยวิธีที่ยาก ปิน เหมวรรณ ผู้เชี่ยวชาญอสังหาริมทรัพย์เผยข้อผิดพลาดและกลโกงที่ชาวต่างชาติใหม่มักเจอ และวิธีป้องกันตัวเอง',
+    'blog.furnished.title': 'คอนโดครบเครื่อง vs ไม่ครบเครื่องในกรุงเทพฯ: วิเคราะห์ต้นทุนแบบครบถ้วน',
+    'blog.furnished.excerpt': 'ควรเช่าคอนโดครบเครื่องหรือไม่ครบเครื่องในกรุงเทพฯ? ปิน เหมวรรณ ผู้เชี่ยวชาญอสังหาริมทรัพย์ให้การวิเคราะห์ต้นทุนและความสะดวกสบายอย่างครบถ้วน',
+    'blog.contract.title': 'วิธีอ่านสัญญาเช่าไทย (อธิบายข้อสำคัญ)',
+    'blog.contract.excerpt': 'รู้สึกกลัวสัญญาเช่าภาษาไทย? คุณไม่ได้เป็นคนเดียว ปิน เหมวรรณ ผู้เชี่ยวชาญอธิบายศัพท์กฎหมายและข้อสำคัญ 5 ข้อที่ชาวต่างชาติทุกคนต้องเข้าใจ',
+    'blog.costs.title': 'ต้นทุนจริงของการอยู่คอนโดกรุงเทพฯ (นอกเหนือจากค่าเช่า)',
+    'blog.costs.excerpt': 'ค่าเช่ารายเดือนเป็นเพียงจุดเริ่มต้น ปิน เหมวรรณ ผู้เชี่ยวชาญเผยต้นทุนที่ซ่อนอยู่ของการอยู่คอนโดกรุงเทพฯ ตั้งแต่ค่าไฟฟ้าไปจนถึงอินเทอร์เน็ต',
     'blog.house.title': 'เช่าบ้าน vs คอนโดในกรุงเทพฯ: อะไรดีกว่าสำหรับคุณ?',
     'blog.house.excerpt': 'ฝันถึงสวน หรืออยากได้ความสะดวกสบายของตึกสูง? ปิน เหมวรรณ ผู้เชี่ยวชาญอสังหาริมทรัพย์กรุงเทพฯ ให้คู่มือเปรียบเทียบข้อดีข้อเสียของการเช่าบ้านและคอนโด',
     
@@ -567,6 +563,11 @@ There is no "better" option—only the better option for your specific life stag
     'areas.riverside.description': 'การอยู่อาศัยที่งดงามริมแม่น้ำเจ้าพระยา คอนโดหรูหราที่มีวิวแม่น้ำที่งดงามและบรรยากาศที่เงียบสงบ',
     'areas.riverside.highlights': ['วิวแม่น้ำ', 'การอยู่อาศัยหรูหรา', 'สภาพแวดล้อมที่เงียบสงบ', 'การขนส่งทางเรือ'],
     'areas.riverside.suitability': 'ครอบครัว ผู้แสวงหาความหรูหรา ผู้ที่ชอบการอยู่อาศัยริมแม่น้ำที่เงียบสงบ',
+    
+    // Testimonials Page
+    'testimonials.cta.title': 'พร้อมที่จะเข้าร่วมกับลูกค้าที่มีความสุขของฉันหรือยัง?',
+    'testimonials.cta.subtitle': 'สัมผัสบริการที่ยอดเยี่ยมเหมือนกับที่ลูกค้าของฉันชื่นชม',
+    'testimonials.cta.button': 'เริ่มต้นวันนี้',
     
     // Contact Page
     'contact.title': 'มาหาบ้านในฝันของคุณในกรุงเทพฯ กันเถอะ',
