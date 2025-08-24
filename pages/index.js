@@ -2,10 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-// Import existing components
-import Navbar from '../src/components/Navbar'
-import Footer from '../src/components/Footer'
-import FloatingContact from '../src/components/FloatingContact'
+// We'll create simplified components for now to avoid context issues
 
 export default function Home() {
   const { locale } = useRouter()
@@ -48,7 +45,41 @@ export default function Home() {
       </Head>
       
       <div className="min-h-screen" style={{background: 'linear-gradient(to bottom, #F9F9DC, #F5F5D0)'}}>
-        <Navbar />
+        {/* Simple Navbar */}
+        <nav className="bg-white shadow-lg sticky top-0 z-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-16">
+              <Link href="/" className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold">P</span>
+                </div>
+                <span className="text-xl font-bold text-gray-900">Pin Property Pro</span>
+              </Link>
+              
+              <div className="flex items-center space-x-6">
+                <Link href={`/${locale || 'en'}/blog`} className="text-gray-700 hover:text-red-600">
+                  Blog
+                </Link>
+                <Link href={`/${locale || 'en'}/areas`} className="text-gray-700 hover:text-red-600">
+                  Areas
+                </Link>
+                <Link href={`/${locale || 'en'}/contact`} className="text-gray-700 hover:text-red-600">
+                  Contact
+                </Link>
+                
+                {/* Language Toggle */}
+                <div className="flex items-center gap-2">
+                  <Link href="/en" className={`px-3 py-1 rounded ${locale === 'en' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
+                    🇬🇧 EN
+                  </Link>
+                  <Link href="/th" className={`px-3 py-1 rounded ${locale === 'th' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
+                    🇹🇭 TH
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
         
         <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center mb-16">
@@ -62,18 +93,22 @@ export default function Home() {
               {content.hero.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link href={`/${locale}/contact`} className="px-8 py-4 text-white font-bold rounded-lg transition-all duration-200 hover:scale-105 shadow-lg" style={{backgroundColor: '#800020'}}>
+              <Link href={`/${locale || 'en'}/contact`} className="px-8 py-4 text-white font-bold rounded-lg transition-all duration-200 hover:scale-105 shadow-lg" style={{backgroundColor: '#800020'}}>
                 {content.hero.consultation}
               </Link>
-              <Link href={`/${locale}/areas`} className="px-8 py-4 font-bold rounded-lg transition-all duration-200 hover:scale-105 shadow-lg border-2" style={{borderColor: '#800020', color: '#800020', backgroundColor: '#F9F9DC'}}>
+              <Link href={`/${locale || 'en'}/areas`} className="px-8 py-4 font-bold rounded-lg transition-all duration-200 hover:scale-105 shadow-lg border-2" style={{borderColor: '#800020', color: '#800020', backgroundColor: '#F9F9DC'}}>
                 {content.hero.explore}
               </Link>
             </div>
           </div>
         </main>
         
-        <FloatingContact />
-        <Footer />
+        {/* Simple Footer */}
+        <footer className="bg-gray-900 text-white py-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p className="text-gray-400">© 2025 Pin Property Pro. All rights reserved.</p>
+          </div>
+        </footer>
       </div>
     </>
   )
