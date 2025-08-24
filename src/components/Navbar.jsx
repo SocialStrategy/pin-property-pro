@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, X, Home } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
+import LanguageToggle from './LanguageToggle'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const { t } = useLanguage()
 
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
@@ -18,21 +21,22 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             <Link to="/" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
-              Home
+              {t('nav.home')}
             </Link>
             <Link to="/areas" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
-              Areas
+              {t('nav.areas')}
             </Link>
             <Link to="/testimonials" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
-              Testimonials
+              {t('nav.testimonials')}
             </Link>
             <Link to="/blog" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
-              Blog
+              {t('nav.blog')}
             </Link>
+            <LanguageToggle />
             <Link to="/contact" className="btn-primary">
-              Contact
+              {t('nav.contact')}
             </Link>
           </div>
 
@@ -56,35 +60,38 @@ const Navbar = () => {
                 className="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Home
+                {t('nav.home')}
               </Link>
               <Link
                 to="/areas"
                 className="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Areas
+                {t('nav.areas')}
               </Link>
               <Link
                 to="/testimonials"
                 className="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Testimonials
+                {t('nav.testimonials')}
               </Link>
               <Link
                 to="/blog"
                 className="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Blog
+                {t('nav.blog')}
               </Link>
+              <div className="px-3 py-2">
+                <LanguageToggle />
+              </div>
               <Link
                 to="/contact"
                 className="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
+                {t('nav.contact')}
               </Link>
             </div>
           </div>

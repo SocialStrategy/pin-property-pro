@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
 import { MessageCircle, MapPin, Shield, Users, Star, Instagram, Phone, CheckCircle, Award, Home as HomeIcon } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const Home = () => {
+  const { t } = useLanguage()
+  
   return (
     <div className="min-h-screen" style={{background: 'linear-gradient(to bottom, #F9F9DC, #F5F5D0)'}}>
       {/* Hero Section */}
@@ -12,29 +15,25 @@ const Home = () => {
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium" style={{backgroundColor: '#800020', color: 'white'}}>
                 <Award className="w-4 h-4" />
-                Bangkok's Premier Real Estate Expert
+                {t('home.badge')}
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
-                Find Your{' '}
-                <span className="text-transparent bg-clip-text" style={{background: 'linear-gradient(45deg, #800020, #660019)', WebkitBackgroundClip: 'text'}}>
-                  Dream Home
-                </span>
-                {' '}in Bangkok
+                {t('home.hero.title')}
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                Professional real estate services with personalized attention. From luxury condos to perfect apartments - I'll help you discover your ideal Bangkok home.
+                {t('home.hero.subtitle')}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact" className="btn-primary text-center">
                   <MessageCircle className="w-5 h-5 inline mr-2" />
-                  Schedule Free Consultation
+                  {t('home.hero.consultation')}
                 </Link>
                 <Link to="/areas" className="btn-secondary text-center">
                   <MapPin className="w-5 h-5 inline mr-2" />
-                  Explore Areas
+                  {t('home.hero.explore')}
                 </Link>
               </div>
 
@@ -42,15 +41,15 @@ const Home = () => {
               <div className="flex items-center gap-8 pt-6 border-t border-gray-200">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-gray-900">500+</div>
-                  <div className="text-sm text-gray-600">Happy Clients</div>
+                  <div className="text-sm text-gray-600">{t('home.stats.clients')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-gray-900">5★</div>
-                  <div className="text-sm text-gray-600">Average Rating</div>
+                  <div className="text-sm text-gray-600">{t('home.stats.rating')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-gray-900">24/7</div>
-                  <div className="text-sm text-gray-600">Support</div>
+                  <div className="text-sm text-gray-600">{t('home.stats.support')}</div>
                 </div>
               </div>
             </div>
@@ -67,8 +66,8 @@ const Home = () => {
                       className="w-20 h-20 rounded-2xl object-cover shadow-xl border-2 border-red-100"
                     />
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-gray-900">Pin Hemmawan</h3>
-                      <p className="text-red-600 font-medium">Bangkok Real Estate Specialist</p>
+                      <h3 className="text-2xl font-bold text-gray-900">{t('home.profile.name')}</h3>
+                      <p className="text-red-600 font-medium">{t('home.profile.title')}</p>
                       <div className="flex items-center gap-1 mt-2">
                         {[...Array(5)].map((_, i) => (
                           <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />

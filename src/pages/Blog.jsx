@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom'
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import { Badge } from "../components/ui/badge"
 import { Calendar, MapPin, User } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const Blog = () => {
+  const { t } = useLanguage()
+  
   const blogPosts = [
     {
       id: 'bangkok-neighborhood-guide-2025',
@@ -65,10 +68,10 @@ const Blog = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Bangkok Real Estate Insights
+            {t('blog.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Expert advice and insider tips from Pin Hemmawan to help you navigate Bangkok's rental market with confidence.
+            {t('blog.subtitle')}
           </p>
         </div>
 

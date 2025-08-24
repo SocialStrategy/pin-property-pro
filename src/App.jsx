@@ -10,13 +10,15 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import Footer from './components/Footer'
 import FloatingContact from './components/FloatingContact'
 import ErrorBoundary from './components/ErrorBoundary'
+import LanguageProvider from './contexts/LanguageContext'
 
-// Updated App with Blog functionality - v2.0
+// Updated App with Blog functionality and Language Support - v3.0
 
 function App() {
   return (
     <ErrorBoundary>
-      <Router>
+      <LanguageProvider>
+        <Router>
         <div className="min-h-screen bg-white flex flex-col">
           <Navbar />
           <div className="flex-grow">
@@ -34,6 +36,7 @@ function App() {
           <FloatingContact />
         </div>
       </Router>
+      </LanguageProvider>
     </ErrorBoundary>
   )
 }
