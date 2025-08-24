@@ -8,51 +8,51 @@ const Areas = () => {
   const areas = [
     {
       name: "Sukhumvit",
-      description: "The heart of expat life in Bangkok. Central location with excellent BTS connectivity, diverse dining, and vibrant nightlife.",
+      description: t('areas.sukhumvit.description'),
       bts: ["Nana", "Asok", "Phrom Phong", "Thong Lo", "Ekkamai"],
-      highlights: ["Shopping malls", "International restaurants", "Nightlife", "Large expat community"],
+      highlights: t('areas.sukhumvit.highlights'),
       rentRange: "฿30,000 - ฿150,000+",
-      suitability: "Singles, couples, professionals seeking convenience and nightlife"
+      suitability: t('areas.sukhumvit.suitability')
     },
     {
       name: "Sathorn / Silom",
-      description: "Bangkok's Wall Street. Premium business district with luxury apartments, close to Lumpini Park and major offices.",
+      description: t('areas.sathorn.description'),
       bts: ["Chong Nonsi", "Surasak", "Saphan Taksin"],
-      highlights: ["Business district", "Luxury condos", "Lumpini Park", "Fine dining"],
+      highlights: t('areas.sathorn.highlights'),
       rentRange: "฿50,000 - ฿300,000+",
-      suitability: "High-income professionals, families, luxury seekers"
+      suitability: t('areas.sathorn.suitability')
     },
     {
       name: "Thonglor / Phrom Phong",
-      description: "Upscale and sophisticated area, particularly popular with Japanese expats. Premium dining and boutique shopping.",
+      description: t('areas.thonglor.description'),
       bts: ["Thong Lo", "Phrom Phong"],
-      highlights: ["High-end restaurants", "Boutique shopping", "Japanese community", "Luxury condos"],
+      highlights: t('areas.thonglor.highlights'),
       rentRange: "฿60,000 - ฿200,000+",
-      suitability: "Affluent professionals, Japanese expats, luxury lifestyle seekers"
+      suitability: t('areas.thonglor.suitability')
     },
     {
       name: "Ari",
-      description: "Trendy, bohemian neighborhood with a relaxed local vibe. Known for independent cafes, art galleries, and creative community.",
+      description: t('areas.ari.description'),
       bts: ["Ari", "Sanam Pao"],
-      highlights: ["Hipster cafes", "Art scene", "Local markets", "Relaxed atmosphere"],
+      highlights: t('areas.ari.highlights'),
       rentRange: "฿25,000 - ฿80,000",
-      suitability: "Young professionals, creatives, those seeking local culture"
+      suitability: t('areas.ari.suitability')
     },
     {
       name: "On Nut",
-      description: "Affordable yet well-connected area on the BTS Sukhumvit line. Growing amenities with good value for money.",
+      description: t('areas.onnut.description'),
       bts: ["On Nut", "Bang Chak"],
-      highlights: ["Affordable living", "Good BTS access", "Local markets", "Growing amenities"],
+      highlights: t('areas.onnut.highlights'),
       rentRange: "฿20,000 - ฿60,000",
-      suitability: "Budget-conscious expats, young professionals, first-time Bangkok residents"
+      suitability: t('areas.onnut.suitability')
     },
     {
       name: "Riverside",
-      description: "Scenic living along the Chao Phraya River. Luxury condos with spectacular river views and tranquil atmosphere.",
+      description: t('areas.riverside.description'),
       bts: ["Saphan Taksin"],
-      highlights: ["River views", "Luxury living", "Peaceful environment", "Boat transport"],
+      highlights: t('areas.riverside.highlights'),
       rentRange: "฿80,000 - ฿300,000+",
-      suitability: "Families, luxury seekers, those preferring tranquil riverside living"
+      suitability: t('areas.riverside.suitability')
     }
   ]
 

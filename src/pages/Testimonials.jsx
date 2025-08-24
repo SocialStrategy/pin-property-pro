@@ -124,7 +124,7 @@ const Testimonials = () => {
                 </div>
                 <div className="absolute top-4 right-4">
                   <Badge style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
-                    {getFlagEmoji(testimonial.nationality)} {testimonial.nationality}
+                    {getFlagEmoji(testimonial.nationality)}
                   </Badge>
                 </div>
               </div>
@@ -159,16 +159,16 @@ const Testimonials = () => {
         </div>
 
         <div className="text-center mt-16 p-8 rounded-2xl" style={{backgroundColor: '#800020', color: 'white'}}>
-          <h2 className="text-3xl font-bold mb-4">Ready to Join My Happy Clients?</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('testimonials.cta.title')}</h2>
           <p className="mb-6 text-lg" style={{color: '#F9F9DC'}}>
-            Experience the same exceptional service that my clients rave about.
+            {t('testimonials.cta.subtitle')}
           </p>
           <a 
             href="/contact" 
             className="font-bold px-8 py-3 rounded-lg transition-colors inline-block hover:opacity-90"
             style={{backgroundColor: '#F9F9DC', color: '#800020'}}
           >
-            Get Started Today
+            {t('testimonials.cta.button')}
           </a>
         </div>
       </div>

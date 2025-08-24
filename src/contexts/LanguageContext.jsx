@@ -403,6 +403,31 @@ There is no "better" option—only the better option for your specific life stag
     'areas.cta.subtitle': 'Let me show you the best properties in your preferred neighborhoods.',
     'areas.cta.button': 'Schedule Area Tour',
     
+    // Area Details - English
+    'areas.sukhumvit.description': 'The heart of expat life in Bangkok. Central location with excellent BTS connectivity, diverse dining, and vibrant nightlife.',
+    'areas.sukhumvit.highlights': ['Shopping malls', 'International restaurants', 'Nightlife', 'Large expat community'],
+    'areas.sukhumvit.suitability': 'Singles, couples, professionals seeking convenience and nightlife',
+    
+    'areas.sathorn.description': "Bangkok's Wall Street. Premium business district with luxury apartments, close to Lumpini Park and major offices.",
+    'areas.sathorn.highlights': ['Business district', 'Luxury condos', 'Lumpini Park', 'Fine dining'],
+    'areas.sathorn.suitability': 'High-income professionals, families, luxury seekers',
+    
+    'areas.thonglor.description': 'Upscale and sophisticated area, particularly popular with Japanese expats. Premium dining and boutique shopping.',
+    'areas.thonglor.highlights': ['High-end restaurants', 'Boutique shopping', 'Japanese community', 'Luxury condos'],
+    'areas.thonglor.suitability': 'Affluent professionals, Japanese expats, luxury lifestyle seekers',
+    
+    'areas.ari.description': 'Trendy, bohemian neighborhood with a relaxed local vibe. Known for independent cafes, art galleries, and creative community.',
+    'areas.ari.highlights': ['Hipster cafes', 'Art scene', 'Local markets', 'Relaxed atmosphere'],
+    'areas.ari.suitability': 'Young professionals, creatives, those seeking local culture',
+    
+    'areas.onnut.description': 'Affordable yet well-connected area on the BTS Sukhumvit line. Growing amenities with good value for money.',
+    'areas.onnut.highlights': ['Affordable living', 'Good BTS access', 'Local markets', 'Growing amenities'],
+    'areas.onnut.suitability': 'Budget-conscious expats, young professionals, first-time Bangkok residents',
+    
+    'areas.riverside.description': 'Scenic living along the Chao Phraya River. Luxury condos with spectacular river views and tranquil atmosphere.',
+    'areas.riverside.highlights': ['River views', 'Luxury living', 'Peaceful environment', 'Boat transport'],
+    'areas.riverside.suitability': 'Families, luxury seekers, those preferring tranquil riverside living',
+    
     // Contact Page
     'contact.title': 'Let\'s Find Your Perfect Bangkok Home',
     'contact.subtitle': 'Ready to start your stress-free condo search? Choose your preferred way to connect, and I\'ll respond the same day with a personalized consultation plan.',
@@ -517,6 +542,31 @@ There is no "better" option—only the better option for your specific life stag
     'areas.cta.title': 'พร้อมที่จะสำรวจพื้นที่เหล่านี้หรือยัง?',
     'areas.cta.subtitle': 'ให้ฉันแสดงอสังหาริมทรัพย์ที่ดีที่สุดในย่านที่คุณต้องการ',
     'areas.cta.button': 'นัดหมายทัวร์พื้นที่',
+    
+    // Area Details - Thai
+    'areas.sukhumvit.description': 'หัวใจของชีวิตชาวต่างชาติในกรุงเทพฯ ทำเลกลางที่มีการเชื่อมต่อ BTS ที่ยอดเยี่ยม ร้านอาหารหลากหลาย และชีวิตยามค่ำคืนที่มีชีวิตชีวา',
+    'areas.sukhumvit.highlights': ['ห้างสรรพสินค้า', 'ร้านอาหารนานาชาติ', 'ชีวิตยามค่ำคืน', 'ชุมชนชาวต่างชาติขนาดใหญ่'],
+    'areas.sukhumvit.suitability': 'คนโสด คู่รัก ผู้เชี่ยวชาญที่แสวงหาความสะดวกสบายและชีวิตยามค่ำคืน',
+    
+    'areas.sathorn.description': 'วอลล์สตรีทของกรุงเทพฯ ย่านธุรกิจพรีเมียมที่มีอพาร์ทเมนท์หรูหรา ใกล้สวนลุมพินีและสำนักงานใหญ่',
+    'areas.sathorn.highlights': ['ย่านธุรกิจ', 'คอนโดหรูหรา', 'สวนลุมพินี', 'ร้านอาหารชั้นเลิศ'],
+    'areas.sathorn.suitability': 'ผู้เชี่ยวชาญรายได้สูง ครอบครัว ผู้แสวงหาความหรูหรา',
+    
+    'areas.thonglor.description': 'พื้นที่ชั้นสูงและซับซ้อน ได้รับความนิยมเป็นพิเศษจากชาวญี่ปุ่น ร้านอาหารพรีเมียมและการช้อปปิ้งบูติก',
+    'areas.thonglor.highlights': ['ร้านอาหารชั้นสูง', 'ช้อปปิ้งบูติก', 'ชุมชนญี่ปุ่น', 'คอนโดหรูหรา'],
+    'areas.thonglor.suitability': 'ผู้เชี่ยวชาญที่ร่ำรวย ชาวญี่ปุ่น ผู้แสวงหาไลฟ์สไตล์หรูหรา',
+    
+    'areas.ari.description': 'ย่านทันสมัยและโบฮีเมียนที่มีบรรยากาศท้องถิ่นที่ผ่อนคลาย มีชื่อเสียงในด้านคาเฟ่อิสระ แกลเลอรี่ศิลปะ และชุมชนสร้างสรรค์',
+    'areas.ari.highlights': ['คาเฟ่ฮิปสเตอร์', 'ฉากศิลปะ', 'ตลาดท้องถิ่น', 'บรรยากาศผ่อนคลาย'],
+    'areas.ari.suitability': 'ผู้เชี่ยวชาญรุ่นใหม่ นักสร้างสรรค์ ผู้ที่แสวงหาวัฒนธรรมท้องถิ่น',
+    
+    'areas.onnut.description': 'พื้นที่ราคาไม่แพงแต่เชื่อมต่อได้ดีบนสาย BTS สุขุมวิท สิ่งอำนวยความสะดวกที่เพิ่มขึ้นพร้อมคุณค่าที่คุ้มค่า',
+    'areas.onnut.highlights': ['การอยู่อาศัยราคาไม่แพง', 'การเข้าถึง BTS ที่ดี', 'ตลาดท้องถิ่น', 'สิ่งอำนวยความสะดวกที่เพิ่มขึ้น'],
+    'areas.onnut.suitability': 'ชาวต่างชาติที่ใส่ใจงบประมาณ ผู้เชี่ยวชาญรุ่นใหม่ ผู้อยู่อาศัยในกรุงเทพฯ ครั้งแรก',
+    
+    'areas.riverside.description': 'การอยู่อาศัยที่งดงามริมแม่น้ำเจ้าพระยา คอนโดหรูหราที่มีวิวแม่น้ำที่งดงามและบรรยากาศที่เงียบสงบ',
+    'areas.riverside.highlights': ['วิวแม่น้ำ', 'การอยู่อาศัยหรูหรา', 'สภาพแวดล้อมที่เงียบสงบ', 'การขนส่งทางเรือ'],
+    'areas.riverside.suitability': 'ครอบครัว ผู้แสวงหาความหรูหรา ผู้ที่ชอบการอยู่อาศัยริมแม่น้ำที่เงียบสงบ',
     
     // Contact Page
     'contact.title': 'มาหาบ้านในฝันของคุณในกรุงเทพฯ กันเถอะ',
