@@ -765,7 +765,7 @@ After 6-12 months, if you find you need more space or prefer a quieter lifestyle
 export default function BlogPost() {
   const router = useRouter()
   const { slug } = router.query
-  const locale = router.asPath.startsWith('/th') ? 'th' : 'en'
+  const { locale } = router
   
   const post = blogContent[slug]
   if (!post) {

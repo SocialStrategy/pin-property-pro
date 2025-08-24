@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Contact() {
   const router = useRouter()
-  const locale = router.asPath.startsWith('/th') ? 'th' : 'en'
+  const { locale } = router
   
   const t = {
     en: {
