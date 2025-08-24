@@ -130,21 +130,21 @@ The website includes multiple contact methods:
 ## 🔧 Customization
 
 ### Updating Contact Information
-Edit `/src/pages/Contact.jsx` to update:
+Edit `/pages/contact.js` to update:
 - Phone numbers
 - LINE ID
 - Instagram handle
 - WhatsApp number
 
 ### Adding New Areas
-Edit `/src/pages/Areas.jsx` to add new neighborhoods:
+Edit `/pages/areas.js` to add new neighborhoods:
 - Area description and characteristics
 - BTS/MRT stations
 - Prime condo listings
 - Rent ranges
 
 ### Modifying Testimonials
-Edit `/src/pages/Testimonials.jsx` to:
+Edit testimonials in the relevant page files to:
 - Add new client stories
 - Update statistics
 - Modify success factors
