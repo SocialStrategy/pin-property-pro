@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import TopBar from './components/TopBar'
 import Home from './pages/Home'
 import Areas from './pages/Areas'
 import Contact from './pages/Contact'
@@ -20,6 +21,7 @@ function App() {
       <LanguageProvider>
         <Router>
         <div className="min-h-screen bg-white flex flex-col">
+          <TopBar />
           <Navbar />
           <div className="flex-grow">
             <Routes>

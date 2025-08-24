@@ -103,7 +103,45 @@ const translations = {
     'blog.costs.title': 'The Real Cost of Living in a Bangkok Condo (Beyond the Rent)',
     'blog.costs.excerpt': 'Your monthly rent is just the beginning. Expert Pin Hemmawan uncovers the hidden costs of Bangkok condo living, from electricity bills to internet, so you can budget accurately.',
     'blog.house.title': 'Renting a House vs. a Condo in Bangkok: Which is Better for You?',
-    'blog.house.excerpt': 'Dreaming of a garden, or craving the convenience of a high-rise? Bangkok real estate expert Pin Hemmawan gives a realistic guide to the pros and cons of renting a house versus a condo.'
+    'blog.house.excerpt': 'Dreaming of a garden, or craving the convenience of a high-rise? Bangkok real estate expert Pin Hemmawan gives a realistic guide to the pros and cons of renting a house versus a condo.',
+    
+    // Areas Page
+    'areas.title': 'Bangkok Areas Guide',
+    'areas.subtitle': 'Discover the perfect neighborhood for your lifestyle. Each area offers unique advantages for different types of residents.',
+    'areas.cta.title': 'Ready to Explore These Areas?',
+    'areas.cta.subtitle': 'Let me show you the best properties in your preferred neighborhoods.',
+    'areas.cta.button': 'Schedule Area Tour',
+    
+    // Contact Page
+    'contact.title': 'Let\'s Find Your Perfect Bangkok Home',
+    'contact.subtitle': 'Ready to start your stress-free condo search? Choose your preferred way to connect, and I\'ll respond the same day with a personalized consultation plan.',
+    'contact.methods.title': 'Get In Touch',
+    'contact.stats.title': 'Why Choose Pin?',
+    'contact.stats.rating': '4.9/5 Average Rating',
+    'contact.stats.response': 'Same Day Response',
+    'contact.stats.areas': 'All Bangkok Areas',
+    'contact.form.title': 'Schedule Your Free Consultation',
+    'contact.form.subtitle': 'Tell me about your needs and I\'ll prepare a personalized property selection for our first meeting.',
+    'contact.form.name': 'Full Name',
+    'contact.form.nationality': 'Nationality',
+    'contact.form.email': 'Email',
+    'contact.form.phone': 'Phone/WhatsApp',
+    'contact.form.budget': 'Monthly Budget (THB)',
+    'contact.form.budget.select': 'Select budget range',
+    'contact.form.budget.under30': 'Under ฿30,000',
+    'contact.form.budget.30-50': '฿30,000 - ฿50,000',
+    'contact.form.budget.50-80': '฿50,000 - ฿80,000',
+    'contact.form.budget.80-120': '฿80,000 - ฿120,000',
+    'contact.form.budget.120-200': '฿120,000 - ฿200,000',
+    'contact.form.budget.200plus': '฿200,000+',
+    'contact.form.movein': 'Desired Move-in Date',
+    'contact.form.areas': 'Preferred Areas',
+    'contact.form.requirements': 'Special Requirements or Questions',
+    'contact.form.submit': 'Schedule My Free Consultation',
+    'contact.cta.bottom.title': 'Don\'t Navigate Bangkok\'s Rental Market Alone',
+    'contact.cta.bottom.subtitle': 'Let me be your unfair advantage. With deep local knowledge and Western service standards, I\'ll help you find your perfect Bangkok home without the stress and wasted time.',
+    'contact.line': 'Message on LINE',
+    'contact.instagram': 'Follow on Instagram'
   },
   th: {
     // Navigation

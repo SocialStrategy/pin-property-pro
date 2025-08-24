@@ -1,6 +1,9 @@
 import { MessageCircle, Instagram, Phone, Mail, MapPin, Clock, Users, Star } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const Contact = () => {
+  const { t } = useLanguage()
+  
   const handleSubmit = (e) => {
     e.preventDefault()
     alert('Thank you for your inquiry! Pin will contact you the same day.')
@@ -47,11 +50,10 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Let's Find Your Perfect Bangkok Home
+            {t('contact.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to start your stress-free condo search? Choose your preferred way to connect, 
-            and I'll respond the same day with a personalized consultation plan.
+            {t('contact.subtitle')}
           </p>
         </div>
 

@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, X, Home } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
-import LanguageToggle from './LanguageToggle'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,7 +20,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
               {t('nav.home')}
             </Link>
@@ -34,7 +33,6 @@ const Navbar = () => {
             <Link to="/blog" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
               {t('nav.blog')}
             </Link>
-            <LanguageToggle />
             <Link to="/contact" className="btn-primary">
               {t('nav.contact')}
             </Link>
@@ -83,9 +81,7 @@ const Navbar = () => {
               >
                 {t('nav.blog')}
               </Link>
-              <div className="px-3 py-2">
-                <LanguageToggle />
-              </div>
+
               <Link
                 to="/contact"
                 className="block px-3 py-2 text-gray-700 hover:text-red-600 font-medium"
