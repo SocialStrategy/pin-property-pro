@@ -2,8 +2,312 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-// Blog content for the three main posts
+// Blog content for all six posts
 const blogContent = {
+  'bangkok-neighborhood-guide-2025': {
+    en: {
+      title: 'The Ultimate Bangkok Neighborhood Guide for Expats (2025)',
+      content: `Welcome to Bangkok! If you're reading this, you are likely at the start of an exciting new chapter. I'm Pin, and for over a decade, I've helped expatriates find their perfect home in this incredible city.
+
+One of the first questions my clients ask is, "Pin, where should I live?" It's a simple question with a personal answer. Bangkok is a mosaic of unique districts, each with its own personality.
+
+**Understanding the "Sukhumvit Default"**
+
+Areas like Phrom Phong, Thong Lo, and Ekkamai are popular for good reason. They are centrally located along the BTS Green Line, packed with world-class restaurants and vibrant social scenes.
+
+**The Neighborhood Matchmaker**
+
+Let me help you find your perfect match based on your lifestyle and priorities:
+
+**For Young Professionals & Nightlife Lovers:**
+- **Your Areas:** **Asoke, Nana, Phrom Phong**
+- **Vibe:** Fast-paced, international, and buzzing with energy
+- **You'll Love:** Walking distance to work, incredible dining scene, and easy access to Bangkok's famous nightlife
+- **Keep in Mind:** Can be noisy and crowded, especially on weekends
+
+**For Families with Children:**
+- **Your Areas:** **Bang Na, On Nut, Bearing**  
+- **Vibe:** Suburban feel with family-friendly amenities and international schools nearby
+- **You'll Love:** Larger living spaces, parks and playgrounds, strong expat family community
+- **Keep in Mind:** Longer commute to central Bangkok, but excellent value for space
+
+**For Luxury Seekers:**
+- **Your Areas:** **Sathorn, Silom, Ploenchit**
+- **Vibe:** Polished, professional, and efficient. This is Bangkok's central business district (CBD). The beautiful Lumpini Park offers a green escape from the urban hustle
+- **You'll Love:** Walking distance to work, direct access to both BTS and MRT lines, and prestigious addresses in high-end condominiums
+- **Keep in Mind:** The area can feel quiet on weekends compared to the constant buzz of Sukhumvit
+
+**My Final Advice**
+
+Don't just look at listings online. My best advice is to pick your top two profiles from this list and spend a Saturday exploring those neighborhoods. Grab coffee in Ari, walk through Lumpini Park in Sathorn, or visit the community malls in Bang Na. You'll know when a place feels right.
+
+Finding your first home in Bangkok sets the tone for your entire expat experience. It's a decision that deserves care, attention to detail, and local expertise from a professional.
+
+**If you'd like to discuss your personal needs and get a curated list of properties that truly match your lifestyle, please don't hesitate to contact me. I'm here to help you find a place you'll be happy to call home.**`
+    },
+    th: {
+      title: 'คู่มือย่านกรุงเทพฯ สำหรับชาวต่างชาติ (2025)',
+      content: `ยินดีต้อนรับสู่กรุงเทพฯ! หากคุณกำลังอ่านบทความนี้ คุณอาจกำลังเริ่มต้นบทใหม่ที่น่าตื่นเต้น ฉันชื่อปิน และมากกว่าทศวรรษที่ผ่านมา ฉันได้ช่วยชาวต่างชาติหาบ้านที่สมบูรณ์แบบในเมืองที่น่าทึ่งแห่งนี้
+
+หนึ่งในคำถามแรกที่ลูกค้าของฉันถามคือ "ปิน ฉันควรไปอยู่ที่ไหนดี?" เป็นคำถามง่ายๆ ที่มีคำตอบที่เป็นส่วนตัว กรุงเทพฯ เป็นโมเสกของย่านที่มีเอกลักษณ์ แต่ละย่านมีบุคลิกเป็นของตัวเอง
+
+**ทำความเข้าใจ "ค่าเริ่มต้นสุขุมวิท"**
+
+พื้นที่อย่างพร้อมพงษ์ ทองหล่อ และเอกมัย ได้รับความนิยมด้วยเหตุผลที่ดี พวกมันตั้งอยู่ในทำเลกลางตามแนว BTS สายสีเขียว เต็มไปด้วยร้านอาหารระดับโลกและฉากสังคมที่มีชีวิตชีวา
+
+**นักจับคู่ย่าน**
+
+ให้ฉันช่วยคุณหาคู่ที่สมบูรณ์แบบตามไลฟ์สไตล์และความสำคัญของคุณ:
+
+**สำหรับมืออาชีพรุ่นเยาว์และคนรักสถานบันเทิงยามค่ำคืน:**
+- **ย่านของคุณ:** **อโศก นานา พร้อมพงษ์**
+- **บรรยากาศ:** เร่งรีบ นานาชาติ และเต็มไปด้วยพลังงาน
+- **คุณจะชอบ:** ระยะเดินไปทำงาน ฉากการรับประทานอาหารที่น่าทึ่ง และเข้าถึงสถานบันเทิงยามค่ำคืนที่มีชื่อเสียงของกรุงเทพฯ ได้ง่าย
+- **ควรจำไว้:** อาจมีเสียงดังและแออัด โดยเฉพาะในวันหยุดสุดสัปดาห์
+
+**สำหรับครอบครัวที่มีลูก:**
+- **ย่านของคุณ:** **บางนา อ่อนนุช แบริ่ง**
+- **บรรยากาศ:** รู้สึกเหมือนชานเมืองพร้อมสิ่งอำนวยความสะดวกที่เป็นมิตรกับครอบครัวและโรงเรียนนานาชาติใกล้เคียง
+- **คุณจะชอบ:** พื้นที่อยู่อาศัยที่ใหญ่ขึ้น สวนสาธารณะและสนามเด็กเล่น ชุมชนครอบครัวชาวต่างชาติที่แข็งแกร่ง
+- **ควรจำไว้:** การเดินทางไปกรุงเทพฯ กลางนานขึ้น แต่คุณค่าที่ยอดเยี่ยมสำหรับพื้นที่
+
+**สำหรับผู้แสวงหาความหรูหรา:**
+- **ย่านของคุณ:** **สาทร สีลม เพลินจิต**
+- **บรรยากาศ:** ขัดเกลา เป็นมืออาชีพ และมีประสิทธิภาพ นี่คือย่านธุรกิจกลางเมือง (CBD) ของกรุงเทพฯ สวนลุมพินีที่สวยงามเป็นที่หลบหนีสีเขียวจากความวุ่นวายในเมือง
+- **คุณจะชอบ:** ความสามารถในการเดินไปทำงาน การเข้าถึงโดยตรงทั้งสาย BTS และ MRT และที่อยู่อันทรงเกียรติของคอนโดมิเนียมสมัยใหม่สูงชั้น
+- **ควรจำไว้:** พื้นที่อาจรู้สึกเงียบในวันหยุดสุดสัปดาห์เมื่อเทียบกับความคึกคักอย่างต่อเนื่องของสุขุมวิท
+
+**คำแนะนำสุดท้ายของฉัน**
+
+อย่าแค่ดูรายการออนไลน์ คำแนะนำที่ดีที่สุดของฉันคือเลือกโปรไฟล์สองอันดับแรกจากรายการนี้และใช้เวลาวันเสาร์สำรวจย่านเหล่านั้น ไปดื่มกาแฟที่อารีย์ เดินผ่านสวนลุมพินีในสาทร หรือเยี่ยมชมห้างชุมชนในบางนา คุณจะรู้เมื่อสถานที่รู้สึกถูกใจ
+
+การหาบ้านแรกในกรุงเทพฯ กำหนดโทนเสียงสำหรับประสบการณ์ชาวต่างชาติทั้งหมดของคุณ เป็นการตัดสินใจที่สมควรได้รับการดูแล ความใส่ใจในรายละเอียด และความรู้ท้องถิ่นจากผู้เชี่ยวชาญ
+
+**หากคุณต้องการหารือเกี่ยวกับความต้องการส่วนบุคคลของคุณและได้รับรายการอสังหาริมทรัพย์ที่คัดสรรมาแล้วที่ตรงกับไลฟ์สไตล์ของคุณอย่างแท้จริง โปรดอย่าลังเลที่จะติดต่อฉัน ฉันยินดีที่จะช่วยคุณหาสถานที่ที่คุณจะมีความสุขที่จะเรียกว่าบ้าน**`
+    }
+  },
+  'bangkok-rental-scams-mistakes': {
+    en: {
+      title: 'Bangkok Rental Scams & Common Mistakes to Avoid',
+      content: `The excitement of moving to Bangkok is real, but I also know that navigating a new rental market can be a source of anxiety. Over the years, I've seen good people make small, avoidable mistakes that cost them time, money, and peace of mind.
+
+My philosophy is simple: an informed client is a happy client. I believe in transparency and protecting your best interests. That's why I've compiled this essential list of the most common mistakes and some scams that newcomers should watch out for, to ensure your rental experience is smooth and secure from day one.
+
+Here are 7 critical things to watch for:
+
+**1. Paying "Reservation Fees" to Unverified Agents**
+
+Legitimate agents will not charge large "reservation fees" to view properties. The standard process is paying a two-month security deposit and one month's rent in advance *after* you've viewed the property and are signing an official lease with the owner. Be wary of anyone demanding money upfront online.
+
+**2. Not Documenting Everything on Move-in Day**
+
+This is the most important thing you can do to protect your security deposit. Before you move a single box, walk through the entire property and take photos and videos of *everything*. Pay special attention to existing scratches on floors, stains on furniture, water marks, or appliances that don't work perfectly. Email these to the agent or owner to create a timestamped record.
+
+**3. Ignoring the Air Conditioning**
+
+Electricity is a major monthly expense, and faulty air conditioning is the leading cause of shocking electricity bills. During viewings, turn on every AC unit. Do they cool efficiently? Are there strange noises? Ask when they were last professionally serviced. Standard practice is that owners should provide professional cleaning before you move in, and tenants maintain them during the lease (typically every six months).
+
+**4. Misunderstanding the 30-Day Rule**
+
+In a standard Thai one-year lease, you cannot give 30 days' notice and leave early without penalty. Breaking a lease early typically results in forfeiting your entire two-month security deposit. If your work situation is uncertain, ask me about finding owners who may be open to "diplomatic clauses."
+
+**5. Accepting Verbal Agreements**
+
+If it's not in the written lease, it doesn't exist. Owners may verbally promise to buy a new microwave or fix a leaky faucet, but unless it's added as an addendum to the contract, there's no obligation to follow through. My job is to ensure all agreed-upon terms are put in writing before you sign.
+
+**6. Not Testing Water Pressure and Phone Signal**
+
+These two small things can become major daily annoyances. During viewings, turn on showers and faucets to check water pressure. Then take out your phone and check mobile signal in every room. With many people working from home, dead zones in your new workspace are a problem you want to discover before moving in.
+
+**7. Falling for "Bait Listings"**
+
+You see a beautiful, cheap condo online that looks perfect. When you contact the agent, they tell you, "Oh, that one just got rented, but I have another similar unit..." This is often a tactic to get your contact information. Professional, honest agents will show you properties that are actually available and match your criteria from the start.
+
+Renting in Bangkok should be a positive experience. By being aware of these issues, you can navigate the process with confidence.
+
+**My role is to be your advocate, guide you through each step, and ensure every detail is handled properly. If you're ready to start your property search with a professional you can trust, please contact me.**`
+    },
+    th: {
+      title: 'กลโกงการเช่าในกรุงเทพฯ และข้อผิดพลาดที่ควรหลีกเลี่ยง',
+      content: `ความตื่นเต้นในการย้ายมาอยู่กรุงเทพฯ มีมากมาย แต่ฉันก็รู้ว่าการนำทางตลาดเช่าใหม่อาจเป็นแหล่งความวิตกกังวลได้ ตลอดหลายปีที่ผ่านมา ฉันเห็นคนดีๆ ทำข้อผิดพลาดเล็กๆ ที่หลีกเลี่ยงได้ ซึ่งทำให้พวกเขาเสียเวลา เงิน และความสงบใจ
+
+ปรัชญาของฉันง่ายๆ: ลูกค้าที่มีข้อมูลครบถ้วนคือลูกค้าที่มีความสุข ฉันเชื่อในความโปร่งใสและการปกป้องผลประโยชน์ที่ดีที่สุดของคุณ นั่นคือเหตุผลที่ฉันรวบรวมรายการสำคัญของข้อผิดพลาดที่พบบ่อยที่สุด และกลโกงบางอย่างที่ผู้มาใหม่ควรระวัง มาให้แน่ใจว่าประสบการณ์การเช่าของคุณจะราบรื่นและปลอดภัยตั้งแต่วันแรก
+
+นี่คือ 7 สิ่งสำคัญที่ต้องระวัง:
+
+**1. การจ่าย "ค่าจองล่วงหน้า" ให้กับตัวแทนที่ไม่ได้รับการตรวจสอบ**
+
+ตัวแทนที่ถูกต้องจะไม่เรียกเก็บ "ค่าจองล่วงหน้า" จำนวนมากเพื่อดูอสังหาริมทรัพย์ กระบวนการมาตรฐานคือการจ่ายเงินประกันสองเดือนและค่าเช่าล่วงหน้าหนึ่งเดือน *หลังจาก* ที่คุณได้ดูอสังหาริมทรัพย์และกำลังลงนามในสัญญาเช่าอย่างเป็นทางการกับเจ้าของ ระวังใครก็ตามที่เรียกร้องเงินล่วงหน้าออนไลน์
+
+**2. ไม่บันทึกทุกอย่างในวันย้ายเข้า**
+
+นี่คือสิ่งสำคัญที่สุดที่คุณสามารถทำได้เพื่อปกป้องเงินประกันของคุณ ก่อนที่คุณจะย้ายกล่องสักใบ เดินผ่านอสังหาริมทรัพย์ทั้งหมดและถ่ายรูปและวิดีโอ *ทุกอย่าง* ให้ความสนใจเป็นพิเศษกับรอยขีดข่วนที่มีอยู่บนพื้น คราบบนเฟอร์นิเจอร์ รอยน้ำ หรือเครื่องใช้ไฟฟ้าที่ไม่ทำงานอย่างสมบูรณ์แบบ ส่งสิ่งเหล่านี้ให้ตัวแทนหรือเจ้าของทางอีเมลเพื่อสร้างบันทึกที่มีการประทับเวลา
+
+**3. การเพิกเฉยต่อเครื่องปรับอากาศ**
+
+ไฟฟ้าเป็นค่าใช้จ่ายรายเดือนที่สำคัญ และเครื่องปรับอากาศที่ชำรุดเป็นสาเหตุหลักของค่าไฟที่น่าตกใจ ระหว่างการดู ให้เปิดเครื่องปรับอากาศทุกเครื่อง พวกมันเย็นได้อย่างมีประสิทธิภาพหรือไม่? มีเสียงแปลกๆ หรือไม่? ถามว่าพวกมันได้รับการบำรุงรักษาครั้งสุดท้ายเมื่อไหร่ แนวทางปฏิบัติมาตรฐานคือเจ้าของควรให้ทำความสะอาดอย่างมืออาชีพก่อนที่คุณจะย้ายเข้า และผู้เช่าต้องบำรุงรักษาระหว่างการเช่า (โดยปกติทุกหกเดือน)
+
+**4. การเข้าใจผิดกฎ 30 วัน**
+
+ในสัญญาเช่าไทยมาตรฐานหนึ่งปี คุณไม่สามารถแจ้งล่วงหน้า 30 วันและออกก่อนกำหนดโดยไม่มีค่าปรับ การทำลายสัญญาเช่าก่อนครบกำหนดมักส่งผลให้สูญเสียเงินประกันสองเดือนทั้งหมด หากสถานการณ์งานของคุณไม่แน่นอน ถามฉันเกี่ยวกับการหาเจ้าของที่อาจเปิดให้มี "ข้อยกเว้นทางการทูต"
+
+**5. การยอมรับข้อตกลงด้วยวาจา**
+
+หากไม่ได้อยู่ในสัญญาเช่าที่เป็นลายลักษณ์อักษร มันก็ไม่มีอยู่ เจ้าของอาจสัญญาด้วยวาจาว่าจะซื้อไมโครเวฟใหม่หรือซ่อมก๊อกน้ำรั่ว แต่หากไม่ได้เพิ่มเป็นภาคผนวกในสัญญา ก็ไม่มีภาระผูกพันที่จะปฏิบัติตาม งานของฉันคือให้แน่ใจว่าเงื่อนไขที่ตกลงกันทั้งหมดถูกใส่ไว้เป็นลายลักษณ์อักษรก่อนที่คุณจะลงนาม
+
+**6. ไม่ตรวจสอบแรงดันน้ำและสัญญาณโทรศัพท์**
+
+สิ่งเล็กๆ สองอย่างนี้อาจกลายเป็นความรำคาญในชีวิตประจำวันที่สำคัญ ระหว่างการดู ให้เปิดฝักบัวและก๊อกน้ำเพื่อตรวจสอบแรงดันน้ำ จากนั้นเอาโทรศัพท์ออกมาและตรวจสอบสัญญาณมือถือในทุกห้อง เมื่อหลายคนทำงานจากบ้าน พื้นที่ที่ไม่มีสัญญาณในพื้นที่ทำงานใหม่ของคุณเป็นปัญหาที่คุณต้องการค้นพบก่อนย้ายเข้า
+
+**7. ตกหลุมพรางของ "รายการล่อลวง"**
+
+คุณเห็นคอนโดสวยราคาถูกออนไลน์ ดูสมบูรณ์แบบ เมื่อคุณติดต่อตัวแทน พวกเขาบอกคุณว่า "โอ้ อันนั้นเพิ่งให้เช่าไปแล้ว แต่ฉันมีอีกหน่วยที่คล้ายกัน..." นี่มักเป็นกลยุทธ์เพื่อรับข้อมูลติดต่อของคุณ ตัวแทนมืออาชีพที่มีความซื่อสัตย์จะแสดงอสังหาริมทรัพย์ที่มีอยู่จริงที่ตรงกับเกณฑ์ของคุณตั้งแต่เริ่มต้น
+
+การเช่าในกรุงเทพฯ ควรเป็นประสบการณ์ที่ดี ด้วยการตระหนักถึงประเด็นเหล่านี้ คุณสามารถนำทางกระบวนการด้วยความมั่นใจ
+
+**บทบาทของฉันคือการเป็นผู้สนับสนุนคุณ นำทางคุณผ่านแต่ละขั้นตอนและให้แน่ใจว่าทุกรายละเอียดได้รับการจัดการอย่างถูกต้อง หากคุณพร้อมที่จะเริ่มการค้นหาอสังหาริมทรัพย์กับผู้เชี่ยวชาญที่คุณไว้วางใจได้ โปรดติดต่อฉัน**`
+    }
+  },
+  'bangkok-condo-living-costs': {
+    en: {
+      title: 'Bangkok Condo Living Costs: Complete Monthly Budget Guide',
+      content: `One of the most frequent questions I get from new Bangkok clients is, "How much should I budget for monthly expenses?" It's an excellent question. To feel truly comfortable in your new home, you need to understand realistically about your total monthly costs, not just the rent figure on the lease.
+
+Let me break down the real numbers based on current market rates for a typical 1-bedroom condo in a prime area:
+
+**Monthly Rent: 30,000-45,000 THB**
+This is your base cost, but just the beginning of your monthly expenses.
+
+**Utilities (Essential):**
+- Electricity: 2,000-4,000 THB (varies greatly with AC usage)
+- Water: 200-500 THB (often fixed rate)
+- Internet: 600-1,200 THB (fiber connection)
+- **Utilities Subtotal: 2,800-5,700 THB**
+
+**Building Services:**
+- Maintenance Fee: 50-150 THB per sqm (typically 3,000-6,000 THB for 1BR)
+- Parking: 1,000-2,500 THB (if you have a car)
+- **Building Services Subtotal: 4,000-8,500 THB**
+
+**Lifestyle Expenses:**
+- Groceries: 8,000-15,000 THB
+- Dining Out: 5,000-12,000 THB
+- Transportation (BTS/MRT/Taxis): 2,000-4,000 THB
+- Laundry Service: 500-1,000 THB
+- **Lifestyle Subtotal: 15,500-32,000 THB**
+
+**Total Realistic Monthly Budget:**
+**52,300-91,200 THB** (excluding rent)
+**With rent: 82,300-136,200 THB total**
+
+**The Hidden Costs Nobody Mentions:**
+
+**Air Conditioning Reality Check:**
+Your electricity bill will be your biggest variable expense. A poorly maintained AC unit can easily add 2,000-3,000 THB to your monthly bill. Always test AC efficiency during viewings.
+
+**Internet Installation Surprise:**
+Most condos require separate internet contracts. Installation fees range from 3,000-5,000 THB, and you'll typically need to commit to a 12-month contract.
+
+**Maintenance Fee Confusion:**
+This is calculated per square meter and covers common area maintenance, security, pool, gym, etc. Always ask for the exact monthly amount during viewings.
+
+**Grocery Cost Reality:**
+Imported goods are expensive. A jar of peanut butter can cost 200-300 THB. Local markets offer great value, but international supermarkets will impact your budget significantly.
+
+**My Professional Budgeting Advice:**
+
+**The 30% Rule Doesn't Work in Bangkok**
+The Western advice of spending 30% of income on housing doesn't account for Bangkok's utility costs and lifestyle expenses. I recommend budgeting 40-45% of your income for total housing costs (rent + utilities + building fees).
+
+**Start Conservative**
+For your first year, budget on the higher end of these ranges. Once you understand your personal usage patterns, you can adjust accordingly.
+
+**Emergency Buffer**
+Always keep 2-3 months of expenses saved. Utility deposits, unexpected repairs, or needing to break a lease early can create sudden large expenses.
+
+**Sample Monthly Budget for 80,000 THB Income:**
+- Rent: 25,000 THB
+- Utilities: 3,400 THB  
+- Building Fees: 4,000 THB
+- Lifestyle: 20,000 THB
+- **Total Housing: 52,400 THB (65% of income)**
+- Savings/Emergency: 15,000 THB
+- Remaining: 12,600 THB
+
+Knowing these numbers helps you look at a 25,000 THB condo and see it as a ~28,400 THB monthly commitment. This realistic approach helps you choose properties you'll genuinely be comfortable with for your budget long-term.
+
+**If you have more questions about budgeting for your move, please ask. My goal is to give you a complete and honest picture of Bangkok life.**`
+    },
+    th: {
+      title: 'ค่าใช้จ่ายในการอยู่คอนโดกรุงเทพฯ: คู่มืองบประมาณรายเดือนครบถ้วน',
+      content: `หนึ่งในคำถามที่พบบ่อยที่สุดที่ฉันได้รับจากลูกค้าใหม่ในกรุงเทพฯ คือ "ฉันควรตั้งงบประมาณเท่าไหร่สำหรับค่าใช้จ่ายรายเดือน?" เป็นคำถามที่ยอดเยี่ยม เพื่อให้รู้สึกสบายใจอย่างแท้จริงในบ้านใหม่ของคุณ คุณต้องเข้าใจอย่างสมจริงเกี่ยวกับค่าใช้จ่ายรายเดือนทั้งหมดของคุณ ไม่ใช่แค่ตัวเลขค่าเช่าในสัญญาเช่า
+
+ให้ฉันแจกแจงตัวเลขจริงตามอัตราตลาดปัจจุบันสำหรับคอนโด 1 ห้องนอนทั่วไปในพื้นที่เฟ้น:
+
+**ค่าเช่ารายเดือน: 30,000-45,000 บาท**
+นี่คือต้นทุนพื้นฐานของคุณ แต่เป็นเพียงจุดเริ่มต้นของค่าใช้จ่ายรายเดือนของคุณ
+
+**สาธารณูปโภค (จำเป็น):**
+- ไฟฟ้า: 2,000-4,000 บาท (แตกต่างกันมากตามการใช้แอร์)
+- น้ำ: 200-500 บาท (มักเป็นอัตราคงที่)
+- อินเทอร์เน็ต: 600-1,200 บาท (การเชื่อมต่อไฟเบอร์)
+- **รวมสาธารณูปโภค: 2,800-5,700 บาท**
+
+**บริการอาคาร:**
+- ค่าบำรุงรักษา: 50-150 บาทต่อตร.ม. (โดยทั่วไป 3,000-6,000 บาทสำหรับ 1 ห้องนอน)
+- ที่จอดรถ: 1,000-2,500 บาท (หากคุณมีรถ)
+- **รวมบริการอาคาร: 4,000-8,500 บาท**
+
+**ค่าใช้จ่ายไลฟ์สไตล์:**
+- ของชำ: 8,000-15,000 บาท
+- การรับประทานอาหารนอกบ้าน: 5,000-12,000 บาท
+- การขนส่ง (BTS/MRT/แท็กซี่): 2,000-4,000 บาท
+- บริการซักรีด: 500-1,000 บาท
+- **รวมไลฟ์สไตล์: 15,500-32,000 บาท**
+
+**งบประมาณรายเดือนที่สมจริงทั้งหมด:**
+**52,300-91,200 บาท** (ไม่รวมค่าเช่า)
+**รวมค่าเช่า: 82,300-136,200 บาททั้งหมด**
+
+**ต้นทุนที่ซ่อนอยู่ที่ไม่มีใครพูดถึง:**
+
+**การตรวจสอบความเป็นจริงของเครื่องปรับอากาศ:**
+ค่าไฟฟ้าของคุณจะเป็นค่าใช้จ่ายที่แปรผันมากที่สุด เครื่องปรับอากาศที่ไม่ได้รับการบำรุงรักษาอย่างดีสามารถเพิ่มค่าไฟรายเดือนได้ง่ายๆ 2,000-3,000 บาท ทดสอบประสิทธิภาพแอร์เสมอระหว่างการดู
+
+**ความประหลาดใจในการติดตั้งอินเทอร์เน็ต:**
+คอนโดส่วนใหญ่ต้องการสัญญาอินเทอร์เน็ตแยกต่างหาก ค่าติดตั้งอยู่ในช่วง 3,000-5,000 บาท และโดยทั่วไปคุณจะต้องผูกพันกับสัญญา 12 เดือน
+
+**ความสับสนของค่าบำรุงรักษา:**
+นี่คำนวณต่อตารางเมตรและครอบคลุมการบำรุงรักษาพื้นที่ส่วนกลาง รักษาความปลอดภัย สระว่ายน้ำ ยิม ฯลฯ ถามจำนวนเงินรายเดือนที่แน่นอนเสมอระหว่างการดู
+
+**ความเป็นจริงของต้นทุนของชำ:**
+สินค้านำเข้ามีราคาแพง ขวดเนยถั่วสามารถราคา 200-300 บาท ตลาดท้องถิ่นให้ความคุ้มค่าที่ยอดเยี่ยม แต่ซูเปอร์มาร์เก็ตนานาชาติจะส่งผลกระทบต่องบประมาณของคุณอย่างมีนัยสำคัญ
+
+**คำแนะนำการจัดงบประมาณจากมืออาชีพของฉัน:**
+
+**กฎ 30% ไม่ได้ผลในกรุงเทพฯ**
+คำแนะนำของตะวันตกในการใช้จ่าย 30% ของรายได้สำหรับที่อยู่อาศัยไม่คำนึงถึงต้นทุนสาธารณูปโภคและค่าใช้จ่ายไลฟ์สไตล์ของกรุงเทพฯ ฉันแนะนำให้จัดงบประมาณ 40-45% ของรายได้ของคุณสำหรับต้นทุนที่อยู่อาศัยทั้งหมด (ค่าเช่า + สาธารณูปโภค + ค่าธรรมเนียมอาคาร)
+
+**เริ่มต้นอย่างระมัดระวัง**
+สำหรับปีแรกของคุณ จัดงบประมาณในช่วงสูงของช่วงเหล่านี้ เมื่อคุณเข้าใจรูปแบบการใช้งานส่วนตัวของคุณ คุณสามารถปรับให้เหมาะสมได้
+
+**บัฟเฟอร์ฉุกเฉิน**
+เก็บค่าใช้จ่าย 2-3 เดือนไว้เสมอ เงินประกันสาธารณูปโภค การซ่อมแซมที่ไม่คาดคิด หรือจำเป็นต้องทำลายสัญญาเช่าก่อนกำหนดสามารถสร้างค่าใช้จ่ายขนาดใหญ่อย่างกะทันหัน
+
+**ตัวอย่างงบประมาณรายเดือนสำหรับรายได้ 80,000 บาท:**
+- ค่าเช่า: 25,000 บาท
+- สาธารณูปโภค: 3,400 บาท
+- ค่าธรรมเนียมอาคาร: 4,000 บาท
+- ไลฟ์สไตล์: 20,000 บาท
+- **รวมที่อยู่อาศัย: 52,400 บาท (65% ของรายได้)**
+- เงินออม/ฉุกเฉิน: 15,000 บาท
+- เหลือ: 12,600 บาท
+
+การรู้ตัวเลขเหล่านี้ช่วยให้คุณดูคอนโด 25,000 บาทและเห็นเป็นภาระผูกพันรายเดือน ~28,400 บาท แนวทางที่สมจริงนี้ช่วยให้คุณเลือกอสังหาริมทรัพย์ที่สบายใจอย่างแท้จริงสำหรับงบประมาณของคุณในระยะยาว
+
+**หากคุณมีคำถามเพิ่มเติมเกี่ยวกับการตั้งงบประมาณสำหรับการย้าย โปรดถาม เป้าหมายของฉันคือให้ภาพที่สมบูรณ์และซื่อสัตย์ของชีวิตในกรุงเทพฯ แก่คุณ**`
+    }
+  },
   'furnished-vs-unfurnished-bangkok': {
     en: {
       title: 'Furnished vs. Unfurnished Condo in Bangkok: A Complete Cost Breakdown',
