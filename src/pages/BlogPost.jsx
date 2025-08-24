@@ -1,13 +1,15 @@
 import { useParams, Link } from 'react-router-dom'
 import { Calendar, ArrowLeft, User } from 'lucide-react'
 import { Badge } from "../components/ui/badge"
+import { useLanguage } from '../contexts/LanguageContext'
 
 const BlogPost = () => {
   const { id } = useParams()
+  const { t } = useLanguage()
 
   const blogPosts = {
     'bangkok-neighborhood-guide-2025': {
-      title: 'The Ultimate Bangkok Neighborhood Guide for Expats (2025)',
+      title: t('blog.neighborhood.title'),
       date: '2025-01-16',
       category: 'Neighborhood Guide',
       image: '/images/sukhumvit.jpg',
@@ -64,7 +66,7 @@ Finding your first home in Bangkok sets the tone for your entire expatriate expe
 **If you'd like to discuss your personal needs and get a curated list of properties that truly match your lifestyle, please don't hesitate to contact me. It would be my pleasure to help you find a place you'll be happy to call home.**`
     },
     'bangkok-rental-scams-mistakes': {
-      title: '7 Bangkok Rental Scams & Mistakes to Avoid',
+      title: t('blog.scams.title'),
       date: '2025-01-09',
       category: 'Safety Guide',
       image: '/images/sathorn.jpg',

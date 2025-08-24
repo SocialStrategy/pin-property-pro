@@ -1,8 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import { Badge } from "../components/ui/badge"
 import { Calendar, MapPin, DollarSign, Star } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const Testimonials = () => {
+  const { t } = useLanguage()
+  
   const testimonials = [
     {
       id: 'sarah-melbourne-sukhumvit',
@@ -98,11 +101,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            What My Clients Say
+            {t('testimonials.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Real success stories from expats who found their perfect Bangkok homes. 
-            See why clients from around the world trust Pin Hemmawan.
+            {t('testimonials.subtitle')}
           </p>
         </div>
 

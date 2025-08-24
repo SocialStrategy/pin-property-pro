@@ -10,48 +10,48 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 'bangkok-neighborhood-guide-2025',
-      title: 'The Ultimate Bangkok Neighborhood Guide for Expats (2025)',
-      excerpt: 'Relocating to Bangkok? Expert realtor Pin Hemmawan shares her ultimate 2025 guide to finding the perfect expat neighborhood for your lifestyle, from family-friendly Bang Na to trendy Thong Lo.',
+      title: t('blog.neighborhood.title'),
+      excerpt: t('blog.neighborhood.excerpt'),
       date: '2025-01-16',
-      category: 'Neighborhood Guide',
+      category: 'Guide',
       image: '/images/sukhumvit.jpg'
     },
     {
       id: 'bangkok-rental-scams-mistakes',
-      title: '7 Bangkok Rental Scams & Mistakes to Avoid',
-      excerpt: 'New to renting in Bangkok? Don\'t learn the hard way. Real estate expert Pin Hemmawan reveals 7 common mistakes and potential scams that new expats face, and how to protect yourself.',
+      title: t('blog.scams.title'),
+      excerpt: t('blog.scams.excerpt'),
       date: '2025-01-09',
       category: 'Safety Guide',
       image: '/images/sathorn.jpg'
     },
     {
       id: 'furnished-vs-unfurnished-bangkok',
-      title: 'Furnished vs. Unfurnished Condo in Bangkok: A Complete Cost Breakdown',
-      excerpt: 'Should you rent a furnished or unfurnished condo in Bangkok? Real estate expert Pin Hemmawan provides a complete cost and convenience breakdown to help you make the best financial decision.',
+      title: t('blog.furnished.title'),
+      excerpt: t('blog.furnished.excerpt'),
       date: '2025-01-02',
       category: 'Financial Guide',
       image: '/images/thonglor.jpg'
     },
     {
       id: 'thai-rental-contract-guide',
-      title: 'How to Read a Thai Rental Contract (Key Clauses Explained)',
-      excerpt: 'Feeling intimidated by your Thai rental agreement? You\'re not alone. Expert Pin Hemmawan demystifies the legal jargon and explains 5 key clauses every expat renter must understand.',
+      title: t('blog.contract.title'),
+      excerpt: t('blog.contract.excerpt'),
       date: '2024-12-26',
       category: 'Legal Guide',
       image: '/images/ari.jpg'
     },
     {
       id: 'bangkok-condo-living-costs',
-      title: 'The Real Cost of Living in a Bangkok Condo (Beyond the Rent)',
-      excerpt: 'Your monthly rent is just the beginning. Expert Pin Hemmawan uncovers the hidden costs of Bangkok condo living, from electricity bills to internet, so you can budget accurately.',
+      title: t('blog.costs.title'),
+      excerpt: t('blog.costs.excerpt'),
       date: '2024-12-19',
       category: 'Budget Guide',
       image: '/images/onnut.jpg'
     },
     {
       id: 'house-vs-condo-bangkok',
-      title: 'Renting a House vs. a Condo in Bangkok: Which is Better for You?',
-      excerpt: 'Dreaming of a garden, or craving the convenience of a high-rise? Bangkok real estate expert Pin Hemmawan gives a realistic guide to the pros and cons of renting a house versus a condo.',
+      title: t('blog.house.title'),
+      excerpt: t('blog.house.excerpt'),
       date: '2024-12-12',
       category: 'Property Types',
       image: '/images/riverside.jpg'
@@ -124,9 +124,9 @@ const Blog = () => {
         </div>
 
         <div className="text-center mt-16 p-8 rounded-2xl" style={{backgroundColor: '#800020', color: 'white'}}>
-          <h2 className="text-3xl font-bold mb-4">Need Personal Guidance?</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('blog.cta.title')}</h2>
           <p className="mb-6 text-lg" style={{color: '#F9F9DC'}}>
-            Get expert advice tailored to your specific needs and budget.
+            {t('blog.cta.subtitle')}
           </p>
           <Link 
             to="/contact" 
@@ -134,7 +134,7 @@ const Blog = () => {
             style={{backgroundColor: '#F9F9DC', color: '#800020'}}
           >
             <User className="w-5 h-5" />
-            Contact Pin Today
+            {t('blog.cta.contact')}
           </Link>
         </div>
       </div>

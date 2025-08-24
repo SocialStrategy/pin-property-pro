@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Train, Building, Users } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const Areas = () => {
+  const { t } = useLanguage()
+  
   const areas = [
     {
       name: "Sukhumvit",
@@ -59,11 +62,10 @@ const Areas = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Bangkok Areas & Prime Condos
+            {t('areas.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover the best neighborhoods for expats in Bangkok. Each area offers unique characteristics, 
-            excellent BTS connectivity, and carefully selected prime condominiums.
+            {t('areas.subtitle')}
           </p>
         </div>
 
