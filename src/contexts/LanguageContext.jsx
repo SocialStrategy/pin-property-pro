@@ -217,8 +217,46 @@ const translations = {
     'blog.contract.excerpt': 'Feeling intimidated by your Thai rental agreement? You\'re not alone. Expert Pin Hemmawan demystifies the legal jargon and explains 5 key clauses every expat renter must understand.',
     'blog.costs.title': 'The Real Cost of Living in a Bangkok Condo (Beyond the Rent)',
     'blog.costs.excerpt': 'Your monthly rent is just the beginning. Expert Pin Hemmawan uncovers the hidden costs of Bangkok condo living, from electricity bills to internet, so you can budget accurately.',
-    'blog.house.title': 'Renting a House vs. a Condo in Bangkok: Which is Better for You?',
-    'blog.house.excerpt': 'Dreaming of a garden, or craving the convenience of a high-rise? Bangkok real estate expert Pin Hemmawan gives a realistic guide to the pros and cons of renting a house versus a condo.'
+    'blog.house.title': 'เช่าบ้าน vs คอนโดในกรุงเทพฯ: อะไรดีกว่าสำหรับคุณ?',
+    'blog.house.excerpt': 'ฝันถึงสวน หรืออยากได้ความสะดวกสบายของตึกสูง? ปิน เหมวรรณ ผู้เชี่ยวชาญอสังหาริมทรัพย์กรุงเทพฯ ให้คู่มือเปรียบเทียบข้อดีข้อเสียของการเช่าบ้านและคอนโด',
+    
+    // Areas Page
+    'areas.title': 'คู่มือพื้นที่กรุงเทพฯ',
+    'areas.subtitle': 'ค้นพบย่านที่สมบูรณ์แบบสำหรับไลฟ์สไตล์ของคุณ แต่ละพื้นที่มีข้อดีเฉพาะสำหรับผู้อยู่อาศัยประเภทต่างๆ',
+    'areas.cta.title': 'พร้อมที่จะสำรวจพื้นที่เหล่านี้หรือยัง?',
+    'areas.cta.subtitle': 'ให้ฉันแสดงอสังหาริมทรัพย์ที่ดีที่สุดในย่านที่คุณต้องการ',
+    'areas.cta.button': 'นัดหมายทัวร์พื้นที่',
+    
+    // Contact Page
+    'contact.title': 'มาหาบ้านในฝันของคุณในกรุงเทพฯ กันเถอะ',
+    'contact.subtitle': 'พร้อมที่จะเริ่มต้นการค้นหาคอนโดที่ปราศจากความเครียดแล้วหรือยัง? เลือกวิธีที่คุณต้องการติดต่อ และฉันจะตอบกลับภายในวันเดียวกันพร้อมแผนการปรึกษาที่เป็นส่วนตัว',
+    'contact.methods.title': 'ติดต่อ',
+    'contact.stats.title': 'ทำไมต้องเลือกปิน?',
+    'contact.stats.rating': 'คะแนนเฉลี่ย 4.9/5',
+    'contact.stats.response': 'เวลาตอบกลับภายในวันเดียวกัน',
+    'contact.stats.areas': 'ทุกพื้นที่ในกรุงเทพฯ',
+    'contact.form.title': 'นัดหมายปรึกษาฟรีของคุณ',
+    'contact.form.subtitle': 'บอกความต้องการของคุณ แล้วฉันจะเตรียมการเลือกอสังหาริมทรัพย์ที่เป็นส่วนตัวสำหรับการประชุมครั้งแรกของเรา',
+    'contact.form.name': 'ชื่อเต็ม',
+    'contact.form.nationality': 'สัญชาติ',
+    'contact.form.email': 'อีเมล',
+    'contact.form.phone': 'โทรศัพท์/WhatsApp',
+    'contact.form.budget': 'งบประมาณรายเดือน (บาท)',
+    'contact.form.budget.select': 'เลือกช่วงงบประมาณ',
+    'contact.form.budget.under30': 'ต่ำกว่า ฿30,000',
+    'contact.form.budget.30-50': '฿30,000 - ฿50,000',
+    'contact.form.budget.50-80': '฿50,000 - ฿80,000',
+    'contact.form.budget.80-120': '฿80,000 - ฿120,000',
+    'contact.form.budget.120-200': '฿120,000 - ฿200,000',
+    'contact.form.budget.200plus': '฿200,000+',
+    'contact.form.movein': 'วันที่ต้องการย้ายเข้า',
+    'contact.form.areas': 'พื้นที่ที่ต้องการ',
+    'contact.form.requirements': 'ข้อกำหนดพิเศษหรือคำถาม',
+    'contact.form.submit': 'นัดหมายปรึกษาฟรีของฉัน',
+    'contact.cta.bottom.title': 'อย่าสำรวจตลาดเช่ากรุงเทพฯ เพียงลำพัง',
+    'contact.cta.bottom.subtitle': 'ให้ฉันเป็นข้อได้เปรียบที่ไม่เป็นธรรมของคุณ ด้วยความรู้ท้องถิ่นอย่างลึกซึ้งและมาตรฐานบริการแบบตะวันตก ฉันจะช่วยคุณหาบ้านในฝันในกรุงเทพฯ โดยปราศจากความเครียดและเวลาที่เสียไป',
+    'contact.line': 'ส่งข้อความทาง LINE',
+    'contact.instagram': 'ติดตามบน Instagram'
   }
 }
 

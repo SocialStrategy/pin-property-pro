@@ -104,7 +104,7 @@ Renting in Bangkok should be a positive experience. By being aware of these poin
 **My role is to be your advocate, guiding you through each step and ensuring every detail is handled correctly. If you're ready to start your property search with an expert you can trust, please reach out to me.**`
     },
     'furnished-vs-unfurnished-bangkok': {
-      title: 'Furnished vs. Unfurnished Condo in Bangkok: A Complete Cost Breakdown',
+      title: t('blog.furnished.title'),
       date: '2025-01-02',
       category: 'Financial Guide',
       image: '/images/thonglor.jpg',
@@ -163,7 +163,7 @@ Ultimately, this decision is a blend of finances and lifestyle. My job is to pre
 **Let's talk about your plans and budget. Together, we can find the perfect property—furnished or not—that fits your vision for life in Bangkok.**`
     },
     'thai-rental-contract-guide': {
-      title: 'How to Read a Thai Rental Contract (Key Clauses Explained)',
+      title: t('blog.contract.title'),
       date: '2024-12-26',
       category: 'Legal Guide',
       image: '/images/ari.jpg',
@@ -204,7 +204,7 @@ A rental agreement is a partnership. It should be fair and clear for both partie
 **When you work with me, you can be assured that I have personally reviewed your contract to ensure it is standard, fair, and protects your interests. Your peace of mind is my top priority.**`
     },
     'bangkok-condo-living-costs': {
-      title: 'The Real Cost of Living in a Bangkok Condo (Beyond the Rent)',
+      title: t('blog.costs.title'),
       date: '2024-12-19',
       category: 'Budget Guide',
       image: '/images/onnut.jpg',
@@ -257,7 +257,7 @@ Knowing these figures allows you to look at a 25,000 THB condo and see it as a ~
 **If you have any more questions about budgeting for your move, please ask. My goal is to provide you with a complete and honest picture of life in Bangkok.**`
     },
     'house-vs-condo-bangkok': {
-      title: 'Renting a House vs. a Condo in Bangkok: Which is Better for You?',
+      title: t('blog.house.title'),
       date: '2024-12-12',
       category: 'Property Types',
       image: '/images/riverside.jpg',
@@ -311,10 +311,10 @@ There is no "better" option—only the better option for your specific life stag
     return (
       <div className="min-h-screen py-20 flex items-center justify-center" style={{background: 'linear-gradient(to bottom, #F9F9DC, #F5F5D0)'}}>
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Post Not Found</h1>
-          <p className="text-gray-600 mb-6">The blog post you're looking for doesn't exist.</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">{t('blogpost.notfound.title')}</h1>
+          <p className="text-gray-600 mb-6">{t('blogpost.notfound.subtitle')}</p>
           <Link to="/blog" className="font-medium hover:opacity-80" style={{color: '#800020'}}>
-            ← Back to Blog
+            ← {t('blogpost.back')}
           </Link>
         </div>
       </div>
@@ -335,7 +335,7 @@ There is no "better" option—only the better option for your specific life stag
           style={{color: '#800020'}}
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
-          Back to Blog
+          {t('blogpost.back')}
         </Link>
 
         <article className="rounded-2xl shadow-lg overflow-hidden" style={{backgroundColor: '#F9F9DC', borderColor: '#8A7E72'}}>
@@ -394,9 +394,9 @@ There is no "better" option—only the better option for your specific life stag
             </div>
 
             <div className="mt-12 p-6 rounded-xl" style={{backgroundColor: '#800020', color: 'white'}}>
-              <h3 className="text-xl font-bold mb-4">Ready to Find Your Perfect Bangkok Home?</h3>
+              <h3 className="text-xl font-bold mb-4">{t('blogpost.cta.title')}</h3>
               <p className="mb-4" style={{color: '#F9F9DC'}}>
-                Get personalized guidance from Pin Hemmawan to find the ideal property for your needs.
+                {t('blogpost.cta.subtitle')}
               </p>
               <Link
                 to="/contact"
@@ -404,7 +404,7 @@ There is no "better" option—only the better option for your specific life stag
                 style={{backgroundColor: '#F9F9DC', color: '#800020'}}
               >
                 <User className="w-5 h-5 mr-2" />
-                Contact Pin Today
+                {t('blogpost.cta.contact')}
               </Link>
             </div>
           </div>
