@@ -4,7 +4,7 @@ const FloatingContact = () => {
   return (
     <div className="fixed bottom-4 right-4 z-50">
       <a
-        href="https://wa.me/6695912476"
+        href="https://wa.me/66959124769"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 transition-colors flex items-center justify-center"

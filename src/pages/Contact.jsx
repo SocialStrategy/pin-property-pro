@@ -20,7 +20,7 @@ const Contact = () => {
       title: "WhatsApp",
       description: "International messaging",
       action: "+66 95 912 4769",
-      link: "https://wa.me/6695912476",
+      link: "https://wa.me/66959124769",
       primary: true
     },
     {
@@ -36,7 +36,7 @@ const Contact = () => {
       title: "Phone Call",
       description: "Direct consultation",
       action: "+66 95 912 4769",
-      link: "tel:+6695912476",
+      link: "tel:+66959124769",
       primary: false
     }
   ]
