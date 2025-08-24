@@ -24,6 +24,20 @@ export default function Blog() {
 
   const blogPosts = [
     {
+      slug: 'bangkok-neighborhood-guide-2025',
+      title: {
+        en: 'The Ultimate Bangkok Neighborhood Guide for Expats (2025)',
+        th: 'คู่มือย่านกรุงเทพฯ สำหรับชาวต่างชาติ (2025)'
+      }
+    },
+    {
+      slug: 'bangkok-rental-scams-mistakes',
+      title: {
+        en: 'Bangkok Rental Scams & Common Mistakes to Avoid',
+        th: 'กลโกงการเช่าในกรุงเทพฯ และข้อผิดพลาดที่ควรหลีกเลี่ยง'
+      }
+    },
+    {
       slug: 'furnished-vs-unfurnished-bangkok',
       title: {
         en: 'Furnished vs. Unfurnished Condo in Bangkok: A Complete Cost Breakdown',
@@ -35,6 +49,13 @@ export default function Blog() {
       title: {
         en: 'Thai Rental Contract Guide (Key Clauses Explained)',
         th: 'คู่มือสัญญาเช่าไทย (อธิบายข้อสำคัญ)'
+      }
+    },
+    {
+      slug: 'bangkok-condo-living-costs',
+      title: {
+        en: 'Bangkok Condo Living Costs: Complete Monthly Budget Guide',
+        th: 'ค่าใช้จ่ายในการอยู่คอนโดกรุงเทพฯ: คู่มืองบประมาณรายเดือนครบถ้วน'
       }
     },
     {
