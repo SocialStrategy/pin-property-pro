@@ -446,18 +446,33 @@ export default function ThaiBlogPost() {
                     const items = paragraph.split('\n').filter(item => item.trim())
                     return (
                       <ul key={index} className="list-disc pl-6 mb-6 space-y-2">
-                        {items.map((item, idx) => (
-                          <li key={idx} className="text-gray-700">
-                            {item.replace(/^- \*\*(.*?)\*\*/, '<strong>$1</strong>').replace(/- /, '')}
-                          </li>
-                        ))}
+                        {items.map((item, idx) => {
+                          const cleanItem = item.replace(/- /, '');
+                          const boldMatch = cleanItem.match(/^\*\*(.*?)\*\*/);
+                          if (boldMatch) {
+                            const [, boldText] = boldMatch;
+                            const remainingText = cleanItem.replace(/^\*\*.*?\*\*/, '');
+                            return (
+                              <li key={idx} className="text-gray-700">
+                                <strong>{boldText}</strong>{remainingText}
+                              </li>
+                            );
+                          }
+                          return (
+                            <li key={idx} className="text-gray-700">
+                              {cleanItem}
+                            </li>
+                          );
+                        })}
                       </ul>
                     )
                   }
                   
                   return (
                     <p key={index} className="text-gray-700 mb-6 leading-relaxed">
-                      {paragraph}
+                      {paragraph.split('**').map((part, i) => 
+                        i % 2 === 1 ? <strong key={i}>{part}</strong> : part
+                      )}
                     </p>
                   )
                 })}

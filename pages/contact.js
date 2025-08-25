@@ -95,9 +95,9 @@ export default function Contact() {
                 <span className="text-2xl">📱</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">{content.phone}</h3>
-              <p className="text-gray-600 mb-4">+66 (0) 89-123-4567</p>
+              <p className="text-gray-600 mb-4">+66 95 912 4769</p>
               <a 
-                href="https://wa.me/66891234567" 
+                href="https://wa.me/66959124769" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
@@ -111,9 +111,9 @@ export default function Contact() {
                 <span className="text-2xl">💬</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">{content.line}</h3>
-              <p className="text-gray-600 mb-4">@pinpropertypro</p>
+              <p className="text-gray-600 mb-4">@pinhemmawan</p>
               <a 
-                href="https://line.me/ti/p/@pinpropertypro" 
+                href="https://line.me/ti/p/@pinhemmawan" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
@@ -137,6 +137,155 @@ export default function Contact() {
             </div>
           </div>
           
+          {/* Contact Form Section */}
+          <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto mb-16">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                {locale === 'th' ? 'ส่งข้อความหาฉัน' : 'Send Me a Message'}
+              </h2>
+              <p className="text-gray-600">
+                {locale === 'th' 
+                  ? 'กรอกฟอร์มด้านล่างและฉันจะติดต่อกลับภายใน 24 ชั่วโมง'
+                  : 'Fill out the form below and I\'ll get back to you within 24 hours'
+                }
+              </p>
+            </div>
+
+            <form id="contactForm" className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    {locale === 'th' ? 'ชื่อ *' : 'Name *'}
+                  </label>
+                  <input 
+                    type="text" 
+                    name="name"
+                    required 
+                    placeholder={locale === 'th' ? 'ชื่อของคุณ' : 'Your full name'}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    {locale === 'th' ? 'อีเมล *' : 'Email *'}
+                  </label>
+                  <input 
+                    type="email" 
+                    name="email"
+                    required 
+                    placeholder="your.email@example.com"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                  />
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    {locale === 'th' ? 'เบอร์โทร/WhatsApp' : 'Phone/WhatsApp'}
+                  </label>
+                  <input 
+                    type="tel" 
+                    name="phone"
+                    placeholder="+66 XX XXX XXXX"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    {locale === 'th' ? 'งบประมาณ' : 'Budget'}
+                  </label>
+                  <select 
+                    name="budget"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                  >
+                    <option value="">{locale === 'th' ? 'เลือกงบประมาณ' : 'Select budget'}</option>
+                    <option value="Under ฿30,000">{locale === 'th' ? 'ต่ำกว่า ฿30,000' : 'Under ฿30,000'}</option>
+                    <option value="฿30,000 - ฿50,000">฿30,000 - ฿50,000</option>
+                    <option value="฿50,000 - ฿80,000">฿50,000 - ฿80,000</option>
+                    <option value="฿80,000 - ฿120,000">฿80,000 - ฿120,000</option>
+                    <option value="Above ฿120,000">{locale === 'th' ? 'มากกว่า ฿120,000' : 'Above ฿120,000'}</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    {locale === 'th' ? 'พื้นที่ที่สนใจ' : 'Preferred Area'}
+                  </label>
+                  <select 
+                    name="area"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                  >
+                    <option value="">{locale === 'th' ? 'เลือกพื้นที่' : 'Select area'}</option>
+                    <option value="Sukhumvit">{locale === 'th' ? 'สุขุมวิท' : 'Sukhumvit'}</option>
+                    <option value="Silom/Sathorn">{locale === 'th' ? 'สีลม/สาทร' : 'Silom/Sathorn'}</option>
+                    <option value="Thonglor">{locale === 'th' ? 'ทองหล่อ' : 'Thonglor'}</option>
+                    <option value="Ari">{locale === 'th' ? 'อารี' : 'Ari'}</option>
+                    <option value="Riverside">{locale === 'th' ? 'ริเวอร์ไซด์' : 'Riverside'}</option>
+                    <option value="On Nut">{locale === 'th' ? 'อ่อนนุช' : 'On Nut'}</option>
+                    <option value="Other">{locale === 'th' ? 'อื่นๆ' : 'Other'}</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    {locale === 'th' ? 'ประเภทที่พัก' : 'Property Type'}
+                  </label>
+                  <select 
+                    name="propertyType"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                  >
+                    <option value="">{locale === 'th' ? 'เลือกประเภท' : 'Select type'}</option>
+                    <option value="Studio">{locale === 'th' ? 'สตูดิโอ' : 'Studio'}</option>
+                    <option value="1 Bedroom">{locale === 'th' ? '1 ห้องนอน' : '1 Bedroom'}</option>
+                    <option value="2 Bedroom">{locale === 'th' ? '2 ห้องนอน' : '2 Bedroom'}</option>
+                    <option value="3+ Bedroom">{locale === 'th' ? '3+ ห้องนอน' : '3+ Bedroom'}</option>
+                    <option value="Penthouse">{locale === 'th' ? 'เพนท์เฮาส์' : 'Penthouse'}</option>
+                    <option value="House">{locale === 'th' ? 'บ้าน' : 'House'}</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  {locale === 'th' ? 'วันที่ต้องการย้าย' : 'Preferred Move Date'}
+                </label>
+                <input 
+                  type="date" 
+                  name="moveDate"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  {locale === 'th' ? 'ข้อความ *' : 'Message *'}
+                </label>
+                <textarea 
+                  name="message"
+                  required
+                  rows="5"
+                  placeholder={locale === 'th' 
+                    ? 'บอกฉันเกี่ยวกับสิ่งที่คุณกำลังมองหา...'
+                    : 'Tell me about what you\'re looking for...'
+                  }
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                ></textarea>
+              </div>
+
+              <div className="text-center">
+                <button 
+                  type="submit" 
+                  className="w-full md:w-auto px-8 py-4 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                  style={{background: 'linear-gradient(135deg, #800020 0%, #660019 50%, #4d0013 100%)'}}
+                >
+                  {locale === 'th' ? 'ส่งข้อความผ่าน WhatsApp' : 'Send Message via WhatsApp'}
+                </button>
+              </div>
+            </form>
+          </div>
+
           {/* Profile Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-8">
@@ -157,7 +306,7 @@ export default function Contact() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                   <a 
-                    href="https://wa.me/66891234567" 
+                    href="https://wa.me/66959124769" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="px-8 py-3 text-white font-bold rounded-lg transition-all duration-200 hover:scale-105 shadow-lg"
@@ -178,6 +327,57 @@ export default function Contact() {
           </div>
         </footer>
       </div>
+
+      {/* Contact Form Script */}
+      <script dangerouslySetInnerHTML={{
+        __html: `
+          document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            if (form) {
+              form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData);
+                
+                try {
+                  const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                  });
+                  
+                  const result = await response.json();
+                  
+                  if (result.success && result.whatsappUrl) {
+                    // Open WhatsApp with the pre-filled message
+                    window.open(result.whatsappUrl, '_blank');
+                    
+                    // Show success message
+                    alert('${locale === 'th' 
+                      ? 'กำลังเปิด WhatsApp พร้อมข้อความของคุณ!' 
+                      : 'Opening WhatsApp with your message!'
+                    }');
+                    
+                    // Reset form
+                    form.reset();
+                  } else {
+                    throw new Error(result.message || 'Failed to process form');
+                  }
+                } catch (error) {
+                  console.error('Form submission error:', error);
+                  alert('${locale === 'th' 
+                    ? 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง' 
+                    : 'An error occurred. Please try again.'
+                  }');
+                }
+              });
+            }
+          });
+        `
+      }} />
     </>
   )
 }
