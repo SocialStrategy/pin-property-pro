@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
 
 export default function ThaiContact() {
   const router = useRouter()
   const locale = 'th' // Force Thai locale
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
   const t = {
     th: {
@@ -40,7 +43,7 @@ export default function ThaiContact() {
                 <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">P</span>
                 </div>
-                <span className="text-xl font-bold text-gray-900">Pin Property Pro</span>
+                <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
               <div className="flex items-center space-x-6">
@@ -264,7 +267,7 @@ export default function ThaiContact() {
               <div className="text-center">
                 <button 
                   type="submit" 
-                  className="w-full md:w-auto px-8 py-4 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                  className="w-full md:w-auto px-8 py-4 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transform hover:md:scale-105 transition-all duration-300"
                   style={{background: 'linear-gradient(135deg, #800020 0%, #660019 50%, #4d0013 100%)'}}
                 >
                   ส่งข้อความผ่าน WhatsApp
@@ -293,7 +296,7 @@ export default function ThaiContact() {
                     href="https://wa.me/66959124769" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="px-8 py-3 text-white font-bold rounded-lg transition-all duration-200 hover:scale-105 shadow-lg"
+                    className="px-8 py-3 text-white font-bold rounded-lg transition-all duration-200 hover:md:scale-105 shadow-lg"
                     style={{backgroundColor: '#800020'}}
                   >
                     {content.schedule}

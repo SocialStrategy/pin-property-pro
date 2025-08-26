@@ -73,7 +73,7 @@ export default function Areas() {
                 <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">P</span>
                 </div>
-                <span className="text-xl font-bold text-gray-900">Pin Property Pro</span>
+                <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
               <div className="flex items-center space-x-6">
@@ -127,7 +127,7 @@ export default function Areas() {
           <div className="text-center mt-16">
             <Link 
               href={`/${locale || 'en'}/contact`}
-              className="inline-block px-8 py-4 text-white font-bold rounded-lg transition-all duration-200 hover:scale-105 shadow-lg"
+              className="inline-block px-8 py-4 text-white font-bold rounded-lg transition-all duration-200 hover:md:scale-105 shadow-lg"
               style={{backgroundColor: '#800020'}}
             >
               {locale === 'th' ? 'ติดต่อเพื่อคำแนะนำส่วนบุคคล' : 'Contact for Personalized Advice'}

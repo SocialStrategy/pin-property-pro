@@ -367,7 +367,7 @@ export default function ThaiBlogPost() {
                 <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">P</span>
                 </div>
-                <span className="text-xl font-bold text-gray-900">Pin Property Pro</span>
+                <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
               <div className="flex items-center space-x-6">
@@ -487,7 +487,7 @@ export default function ThaiBlogPost() {
               <p className="text-xl mb-8" style={{color: '#F9F9DC'}}>
                 ติดต่อฉันเพื่อรับคำปรึกษาฟรีและหาคอนโดที่เหมาะกับคุณ
               </p>
-              <Link href="/th/contact" className="inline-block font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300" style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
+              <Link href="/th/contact" className="inline-block font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:md:scale-105 transition-all duration-300" style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
                 ติดต่อเลย
               </Link>
             </div>

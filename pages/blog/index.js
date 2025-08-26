@@ -87,7 +87,7 @@ export default function Blog() {
                 <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">P</span>
                 </div>
-                <span className="text-xl font-bold text-gray-900">Pin Property Pro</span>
+                <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
               <div className="flex items-center space-x-6">

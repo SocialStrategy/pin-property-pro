@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
 
 export default function ThaiBlog() {
   const router = useRouter()
   const locale = 'th'
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
   const content = {
     title: "บล็อก Pin Property Pro | คู่มือการเช่าคอนโดกรุงเทพฯ",
@@ -82,11 +85,12 @@ export default function ThaiBlog() {
                 <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">P</span>
                 </div>
-                <span className="text-xl font-bold text-gray-900">Pin Property Pro</span>
+                <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
-              <div className="flex items-center space-x-6">
-                <Link href="/th/blog" className="text-gray-700 hover:text-red-600 font-semibold">
+              {/* Desktop Navigation */}
+              <div className="hidden md:flex items-center space-x-6">
+                <Link href="/th/blog" className="text-red-600 font-semibold">
                   บล็อก
                 </Link>
                 <Link href="/th/areas" className="text-gray-700 hover:text-red-600">
@@ -109,6 +113,67 @@ export default function ThaiBlog() {
                   </Link>
                 </div>
               </div>
+
+              {/* Mobile menu button */}
+              <div className="md:hidden">
+                <button
+                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                  className="text-gray-700 hover:text-red-600 focus:outline-none focus:text-red-600"
+                >
+                  {mobileMenuOpen ? (
+                    <X className="h-6 w-6" />
+                  ) : (
+                    <Menu className="h-6 w-6" />
+                  )}
+                </button>
+              </div>
+            </div>
+
+            {/* Mobile Navigation Menu */}
+            {mobileMenuOpen && (
+              <div className="md:hidden">
+                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
+                  <Link 
+                    href="/th/blog" 
+                    className="block px-3 py-2 text-red-600 bg-red-50 rounded-md font-semibold"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    บล็อก
+                  </Link>
+                  <Link 
+                    href="/th/areas" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    พื้นที่
+                  </Link>
+                  <Link 
+                    href="/th/testimonials" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    คำรับรอง
+                  </Link>
+                  <Link 
+                    href="/th/contact" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    ติดต่อ
+                  </Link>
+                  
+                  {/* Mobile Language Toggle */}
+                  <div className="flex items-center gap-2 px-3 py-2">
+                    <Link href="/en/blog" className="px-3 py-1 rounded text-gray-700 text-sm">
+                      🇬🇧 EN
+                    </Link>
+                    <Link href="/th/blog" className="px-3 py-1 rounded bg-red-600 text-white text-sm">
+                      🇹🇭 TH
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
             </div>
           </div>
         </nav>
@@ -129,7 +194,7 @@ export default function ThaiBlog() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post) => (
                 <Link key={post.slug} href={`/th/blog/${post.slug}`} className="group">
-                  <article className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group-hover:scale-105">
+                  <article className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group-hover:md:scale-105">
                     <div className="p-6">
                       {/* Category & Date */}
                       <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
@@ -170,7 +235,7 @@ export default function ThaiBlog() {
               <p className="text-xl mb-8" style={{color: '#F9F9DC'}}>
                 ติดต่อฉันเพื่อรับคำปรึกษาฟรีและหาคอนโดที่เหมาะกับคุณ
               </p>
-              <Link href="/th/contact" className="inline-block font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300" style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
+              <Link href="/th/contact" className="inline-block font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:md:scale-105 transition-all duration-300" style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
                 ติดต่อเลย
               </Link>
             </div>

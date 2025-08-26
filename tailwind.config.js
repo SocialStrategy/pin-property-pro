@@ -20,7 +20,10 @@ module.exports = {
           800: '#991b1b',
           900: '#7f1d1d',
         }
-      }
+      },
+      screens: {
+        'xs': '475px',
+      },
     },
   },
   plugins: [],

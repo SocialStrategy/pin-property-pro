@@ -130,7 +130,7 @@ export default function ThaiAreas() {
                 <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">P</span>
                 </div>
-                <span className="text-xl font-bold text-gray-900">Pin Property Pro</span>
+                <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
               <div className="flex items-center space-x-6">
@@ -264,11 +264,11 @@ export default function ThaiAreas() {
                 {content.cta.subtitle}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/th/contact" className="font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 text-center" style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
+                <Link href="/th/contact" className="font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:md:scale-105 transition-all duration-300 text-center" style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
                   <MessageCircle className="w-6 h-6 inline mr-3" />
                   {content.cta.button}
                 </Link>
-                <a href="https://www.instagram.com/pin.propertypro/" target="_blank" rel="noopener noreferrer" className="bg-white hover:bg-gray-50 font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 text-center border-2" style={{borderColor: '#F9F9DC', color: '#800020'}}>
+                <a href="https://www.instagram.com/pin.propertypro/" target="_blank" rel="noopener noreferrer" className="bg-white hover:bg-gray-50 font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:md:scale-105 transition-all duration-300 text-center border-2" style={{borderColor: '#F9F9DC', color: '#800020'}}>
                   <Instagram className="w-6 h-6 inline mr-3" />
                   ดูอสังหาริมทรัพย์
                 </a>

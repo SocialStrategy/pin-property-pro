@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
 
 export default function Blog() {
   const router = useRouter()
   const { locale } = router
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
   const t = {
     en: {
@@ -87,30 +90,95 @@ export default function Blog() {
                 <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">P</span>
                 </div>
-                <span className="text-xl font-bold text-gray-900">Pin Property Pro</span>
+                <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
-              <div className="flex items-center space-x-6">
-                <Link href={`/${locale || 'en'}/blog`} className="text-red-600 font-semibold">
+              {/* Desktop Navigation */}
+              <div className="hidden md:flex items-center space-x-6">
+                <Link href="/en/blog" className="text-red-600 font-semibold">
                   Blog
                 </Link>
-                <Link href={`/${locale || 'en'}/areas`} className="text-gray-700 hover:text-red-600">
+                <Link href="/en/areas" className="text-gray-700 hover:text-red-600">
                   Areas
                 </Link>
-                <Link href={`/${locale || 'en'}/contact`} className="text-gray-700 hover:text-red-600">
+                <Link href="/en/testimonials" className="text-gray-700 hover:text-red-600">
+                  Testimonials
+                </Link>
+                <Link href="/en/contact" className="text-gray-700 hover:text-red-600">
                   Contact
                 </Link>
                 
                 {/* Language Toggle */}
                 <div className="flex items-center gap-2">
-                  <Link href="/en/blog" className={`px-3 py-1 rounded ${locale === 'en' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
+                  <Link href="/en/blog" className="px-3 py-1 rounded bg-red-600 text-white">
                     🇬🇧 EN
                   </Link>
-                  <Link href="/th/blog" className={`px-3 py-1 rounded ${locale === 'th' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
+                  <Link href="/th/blog" className="px-3 py-1 rounded text-gray-700">
                     🇹🇭 TH
                   </Link>
                 </div>
               </div>
+
+              {/* Mobile menu button */}
+              <div className="md:hidden">
+                <button
+                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                  className="text-gray-700 hover:text-red-600 focus:outline-none focus:text-red-600"
+                >
+                  {mobileMenuOpen ? (
+                    <X className="h-6 w-6" />
+                  ) : (
+                    <Menu className="h-6 w-6" />
+                  )}
+                </button>
+              </div>
+            </div>
+
+            {/* Mobile Navigation Menu */}
+            {mobileMenuOpen && (
+              <div className="md:hidden">
+                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
+                  <Link 
+                    href="/en/blog" 
+                    className="block px-3 py-2 text-red-600 bg-red-50 rounded-md font-semibold"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Blog
+                  </Link>
+                  <Link 
+                    href="/en/areas" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Areas
+                  </Link>
+                  <Link 
+                    href="/en/testimonials" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Testimonials
+                  </Link>
+                  <Link 
+                    href="/en/contact" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Contact
+                  </Link>
+                  
+                  {/* Mobile Language Toggle */}
+                  <div className="flex items-center gap-2 px-3 py-2">
+                    <Link href="/en/blog" className="px-3 py-1 rounded bg-red-600 text-white text-sm">
+                      🇬🇧 EN
+                    </Link>
+                    <Link href="/th/blog" className="px-3 py-1 rounded text-gray-700 text-sm">
+                      🇹🇭 TH
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
             </div>
           </div>
         </nav>

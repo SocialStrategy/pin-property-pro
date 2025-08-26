@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import { MessageCircle, MapPin, Shield, Users, Star, Instagram, Phone, CheckCircle, Award } from 'lucide-react'
+import { useState } from 'react'
+import { MessageCircle, MapPin, Shield, Users, Star, Instagram, Phone, CheckCircle, Award, Menu, X } from 'lucide-react'
 
 export default function EnglishHome() {
   const router = useRouter()
   const locale = 'en' // Force English locale
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
   const content = {
     title: "Pin Hemmawan - Bangkok Real Estate Expert | Find Your Dream Home",
@@ -72,10 +74,11 @@ export default function EnglishHome() {
                 <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">P</span>
                 </div>
-                <span className="text-xl font-bold text-gray-900">Pin Property Pro</span>
+                <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
-              <div className="flex items-center space-x-6">
+              {/* Desktop Navigation */}
+              <div className="hidden md:flex items-center space-x-6">
                 <Link href="/en/blog" className="text-gray-700 hover:text-red-600">
                   Blog
                 </Link>
@@ -99,14 +102,74 @@ export default function EnglishHome() {
                   </Link>
                 </div>
               </div>
+
+              {/* Mobile menu button */}
+              <div className="md:hidden">
+                <button
+                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                  className="text-gray-700 hover:text-red-600 focus:outline-none focus:text-red-600"
+                >
+                  {mobileMenuOpen ? (
+                    <X className="h-6 w-6" />
+                  ) : (
+                    <Menu className="h-6 w-6" />
+                  )}
+                </button>
+              </div>
             </div>
+
+            {/* Mobile Navigation Menu */}
+            {mobileMenuOpen && (
+              <div className="md:hidden">
+                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
+                  <Link 
+                    href="/en/blog" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Blog
+                  </Link>
+                  <Link 
+                    href="/en/areas" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Areas
+                  </Link>
+                  <Link 
+                    href="/en/testimonials" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Testimonials
+                  </Link>
+                  <Link 
+                    href="/en/contact" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Contact
+                  </Link>
+                  
+                  {/* Mobile Language Toggle */}
+                  <div className="flex items-center gap-2 px-3 py-2">
+                    <Link href="/en" className="px-3 py-1 rounded bg-red-600 text-white text-sm">
+                      🇬🇧 EN
+                    </Link>
+                    <Link href="/th" className="px-3 py-1 rounded text-gray-700 text-sm">
+                      🇹🇭 TH
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </nav>
 
         {/* Hero Section */}
         <section className="relative py-24 lg:py-32" style={{background: 'linear-gradient(135deg, #F9F9DC 0%, #F5F5D0 50%, #E8E8C8 100%)'}}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
               {/* Left Content */}
               <div className="space-y-8">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium" style={{backgroundColor: '#800020', color: 'white'}}>
@@ -123,18 +186,18 @@ export default function EnglishHome() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/en/contact" className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 text-center">
+                  <Link href="/en/contact" className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transform hover:md:scale-105 transition-all duration-300 text-center">
                     <MessageCircle className="w-5 h-5 inline mr-2" />
                     {content.hero.consultation}
                   </Link>
-                  <Link href="/en/areas" className="bg-white hover:bg-gray-50 font-bold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 text-center border-2" style={{borderColor: '#800020', color: '#800020'}}>
+                  <Link href="/en/areas" className="bg-white hover:bg-gray-50 font-bold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transform hover:md:scale-105 transition-all duration-300 text-center border-2" style={{borderColor: '#800020', color: '#800020'}}>
                     <MapPin className="w-5 h-5 inline mr-2" />
                     {content.hero.explore}
                   </Link>
                 </div>
 
                 {/* Social Proof */}
-                <div className="flex items-center gap-8 pt-6 border-t border-gray-200">
+                <div className="flex items-center gap-4 sm:gap-8 pt-6 border-t border-gray-200">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-gray-900">5★</div>
                     <div className="text-sm text-gray-600">{content.stats.rating}</div>
@@ -178,11 +241,11 @@ export default function EnglishHome() {
 
                     {/* Contact Actions */}
                     <div className="grid grid-cols-2 gap-3">
-                      <a href="https://wa.me/66959124769" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 text-white font-bold px-4 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center">
+                      <a href="https://wa.me/66959124769" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 text-white font-bold px-4 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:md:scale-105 transition-all duration-300 text-center">
                         <MessageCircle className="w-4 h-4 inline mr-2" />
                         {content.profile.whatsapp}
                       </a>
-                      <a href="https://www.instagram.com/pin.propertypro/" target="_blank" rel="noopener noreferrer" className="bg-white hover:bg-gray-50 font-bold px-4 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center border-2" style={{borderColor: '#800020', color: '#800020'}}>
+                      <a href="https://www.instagram.com/pin.propertypro/" target="_blank" rel="noopener noreferrer" className="bg-white hover:bg-gray-50 font-bold px-4 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:md:scale-105 transition-all duration-300 text-center border-2" style={{borderColor: '#800020', color: '#800020'}}>
                         <Instagram className="w-4 h-4 inline mr-2" />
                         {content.profile.follow}
                       </a>
@@ -207,7 +270,7 @@ export default function EnglishHome() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:md:scale-105">
                 <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6">
                   <MapPin className="w-8 h-8 text-white" />
                 </div>
@@ -217,7 +280,7 @@ export default function EnglishHome() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:md:scale-105">
                 <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6">
                   <Shield className="w-8 h-8 text-white" />
                 </div>
@@ -227,7 +290,7 @@ export default function EnglishHome() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:md:scale-105">
                 <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl flex items-center justify-center mb-6">
                   <Users className="w-8 h-8 text-white" />
                 </div>
@@ -251,17 +314,17 @@ export default function EnglishHome() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link href="/en/contact" className="font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 text-center" style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
+              <Link href="/en/contact" className="font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:md:scale-105 transition-all duration-300 text-center" style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
                 <MessageCircle className="w-6 h-6 inline mr-3" />
                 {content.cta.consultation}
               </Link>
-              <a href="https://wa.me/66959124769" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 text-center">
+              <a href="https://wa.me/66959124769" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-3xl transform hover:md:scale-105 transition-all duration-300 text-center">
                 <Phone className="w-6 h-6 inline mr-3" />
                 {content.cta.whatsapp}
               </a>
             </div>
 
-            <div className="flex items-center justify-center gap-6 pt-8 text-red-200">
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 pt-8 text-red-200">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5" />
                 <span>No Hidden Fees</span>

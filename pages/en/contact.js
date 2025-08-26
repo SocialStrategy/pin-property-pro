@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import { MessageCircle, Instagram, Phone, Mail, MapPin, Clock, Users, Star } from 'lucide-react'
+import { useState } from 'react'
+import { MessageCircle, Instagram, Phone, Mail, MapPin, Clock, Users, Star, Menu, X } from 'lucide-react'
 
 export default function EnglishContact() {
   const router = useRouter()
   const locale = 'en'
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
   const content = {
     title: "Contact Pin Hemmawan | Bangkok Real Estate Expert",
@@ -76,10 +78,11 @@ export default function EnglishContact() {
                 <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">P</span>
                 </div>
-                <span className="text-xl font-bold text-gray-900">Pin Property Pro</span>
+                <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
-              <div className="flex items-center space-x-6">
+              {/* Desktop Navigation */}
+              <div className="hidden md:flex items-center space-x-6">
                 <Link href="/en/blog" className="text-gray-700 hover:text-red-600">
                   Blog
                 </Link>
@@ -89,7 +92,7 @@ export default function EnglishContact() {
                 <Link href="/en/testimonials" className="text-gray-700 hover:text-red-600">
                   Testimonials
                 </Link>
-                <Link href="/en/contact" className="text-gray-700 hover:text-red-600 font-semibold">
+                <Link href="/en/contact" className="text-red-600 font-semibold">
                   Contact
                 </Link>
                 
@@ -103,6 +106,67 @@ export default function EnglishContact() {
                   </Link>
                 </div>
               </div>
+
+              {/* Mobile menu button */}
+              <div className="md:hidden">
+                <button
+                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                  className="text-gray-700 hover:text-red-600 focus:outline-none focus:text-red-600"
+                >
+                  {mobileMenuOpen ? (
+                    <X className="h-6 w-6" />
+                  ) : (
+                    <Menu className="h-6 w-6" />
+                  )}
+                </button>
+              </div>
+            </div>
+
+            {/* Mobile Navigation Menu */}
+            {mobileMenuOpen && (
+              <div className="md:hidden">
+                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
+                  <Link 
+                    href="/en/blog" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Blog
+                  </Link>
+                  <Link 
+                    href="/en/areas" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Areas
+                  </Link>
+                  <Link 
+                    href="/en/testimonials" 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Testimonials
+                  </Link>
+                  <Link 
+                    href="/en/contact" 
+                    className="block px-3 py-2 text-red-600 bg-red-50 rounded-md font-semibold"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Contact
+                  </Link>
+                  
+                  {/* Mobile Language Toggle */}
+                  <div className="flex items-center gap-2 px-3 py-2">
+                    <Link href="/en/contact" className="px-3 py-1 rounded bg-red-600 text-white text-sm">
+                      🇬🇧 EN
+                    </Link>
+                    <Link href="/th/contact" className="px-3 py-1 rounded text-gray-700 text-sm">
+                      🇹🇭 TH
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
             </div>
           </div>
         </nav>
@@ -134,7 +198,7 @@ export default function EnglishContact() {
                     }
                     
                     return (
-                      <a key={index} href={method.link} target="_blank" rel="noopener noreferrer" className={`block bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer ${method.primary ? 'border-2 border-green-400 bg-green-50' : 'border border-gray-200'}`}>
+                      <a key={index} href={method.link} target="_blank" rel="noopener noreferrer" className={`block bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:md:scale-105 cursor-pointer ${method.primary ? 'border-2 border-green-400 bg-green-50' : 'border border-gray-200'}`}>
                         <div className="flex items-center gap-4">
                           <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${method.primary ? 'bg-green-600 text-white' : 'bg-gray-100 text-gray-600'}`}>
                             <IconComponent className="w-6 h-6" />
@@ -267,7 +331,7 @@ export default function EnglishContact() {
 
                     <button 
                       type="submit" 
-                      className="w-full text-white font-semibold py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300" style={{background: 'linear-gradient(135deg, #800020 0%, #660019 50%, #4d0013 100%)'}}
+                      className="w-full text-white font-semibold py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:md:scale-105 transition-all duration-300" style={{background: 'linear-gradient(135deg, #800020 0%, #660019 50%, #4d0013 100%)'}}
                     >
                       Schedule My Free Consultation
                     </button>
@@ -286,11 +350,11 @@ export default function EnglishContact() {
                 I'll help you find your perfect Bangkok home without the stress and wasted time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://line.me/ti/p/@pinhemmawan" target="_blank" rel="noopener noreferrer" className="font-semibold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300" style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
+                <a href="https://line.me/ti/p/@pinhemmawan" target="_blank" rel="noopener noreferrer" className="font-semibold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:md:scale-105 transition-all duration-300" style={{backgroundColor: '#F9F9DC', color: '#800020'}}>
                   <MessageCircle className="w-5 h-5 inline mr-2" />
                   Message on LINE
                 </a>
-                <a href="https://www.instagram.com/pin.propertypro/" target="_blank" rel="noopener noreferrer" className="border-2 text-white hover:bg-white font-semibold text-lg px-8 py-4 rounded-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300" style={{borderColor: '#F9F9DC', '--hover-color': '#800020'}}>
+                <a href="https://www.instagram.com/pin.propertypro/" target="_blank" rel="noopener noreferrer" className="border-2 text-white hover:bg-white font-semibold text-lg px-8 py-4 rounded-lg hover:shadow-xl transform hover:md:scale-105 transition-all duration-300" style={{borderColor: '#F9F9DC', '--hover-color': '#800020'}}>
                   <Instagram className="w-5 h-5 inline mr-2" />
                   Follow on Instagram
                 </a>

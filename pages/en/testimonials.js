@@ -179,7 +179,7 @@ export default function Testimonials() {
                 <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">P</span>
                 </div>
-                <span className="text-xl font-bold text-gray-900">Pin Property Pro</span>
+                <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
               <div className="flex items-center space-x-6">
@@ -222,7 +222,7 @@ export default function Testimonials() {
 
           <div className="grid lg:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={testimonial.id} className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <div key={testimonial.id} className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:md:scale-105">
                 <div className="h-48 bg-gray-200 overflow-hidden">
                   <img 
                     src={testimonial.image} 
@@ -283,11 +283,11 @@ export default function Testimonials() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href={locale === 'th' ? '/th/contact' : '/contact'} className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 text-center">
+                <Link href={locale === 'th' ? '/th/contact' : '/contact'} className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transform hover:md:scale-105 transition-all duration-300 text-center">
                   <MessageCircle className="w-5 h-5 inline mr-2" />
                   {locale === 'th' ? 'เริ่มต้นการเดินทางของคุณ' : 'Start Your Journey'}
                 </Link>
-                <a href="https://www.instagram.com/pin.propertypro/" target="_blank" rel="noopener noreferrer" className="bg-white hover:bg-gray-50 font-bold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 text-center border-2" style={{borderColor: '#800020', color: '#800020'}}>
+                <a href="https://www.instagram.com/pin.propertypro/" target="_blank" rel="noopener noreferrer" className="bg-white hover:bg-gray-50 font-bold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transform hover:md:scale-105 transition-all duration-300 text-center border-2" style={{borderColor: '#800020', color: '#800020'}}>
                   <Instagram className="w-5 h-5 inline mr-2" />
                   {locale === 'th' ? 'ดูเรื่องราวเพิ่มเติม' : 'See More Stories'}
                 </a>
