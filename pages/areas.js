@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 import Link from 'next/link'
+import { Menu, X } from 'lucide-react'
 
 export default function Areas() {
   const router = useRouter()
   const { locale } = router
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
   const t = {
     en: {
@@ -76,7 +79,7 @@ export default function Areas() {
                 <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
-              <div className="flex items-center space-x-6">
+              <div className="hidden md:flex items-center space-x-6">
                 <Link href={`/${locale || 'en'}/blog`} className="text-gray-700 hover:text-red-600">
                   Blog
                 </Link>
