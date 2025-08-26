@@ -163,7 +163,7 @@ export default function ThaiTestimonials() {
                   <img 
                     src={testimonial.image} 
                     alt={testimonial.area}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-cover hover:md:scale-110 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-8">

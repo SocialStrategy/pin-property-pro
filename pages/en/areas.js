@@ -264,7 +264,7 @@ export default function EnglishAreas() {
                           <img 
                             src={area.image} 
                             alt={area.name}
-                            className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                            className="w-full h-full object-cover hover:md:scale-110 transition-transform duration-300"
                           />
                         </div>
                       </div>
