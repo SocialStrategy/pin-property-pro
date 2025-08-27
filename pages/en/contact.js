@@ -167,7 +167,6 @@ export default function EnglishContact() {
                 </div>
               </div>
             )}
-            </div>
           </div>
         </nav>
         

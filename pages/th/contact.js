@@ -168,7 +168,6 @@ export default function ThaiContact() {
                 </div>
               </div>
             )}
-            </div>
           </div>
         </nav>
         

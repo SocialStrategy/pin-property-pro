@@ -221,7 +221,6 @@ export default function EnglishAreas() {
                 </div>
               </div>
             )}
-            </div>
           </div>
         </nav>
         

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import Link from 'next/link'
-import { MapPin, Train, Building, Users, MessageCircle, Instagram Menu, X } from 'lucide-react'
+import { MapPin, Train, Building, Users, MessageCircle, Instagram, Menu, X } from 'lucide-react'
 
 export default function ThaiAreas() {
   const router = useRouter()

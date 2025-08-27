@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import Link from 'next/link'
-import { Calendar, MapPin, DollarSign, Star, MessageCircle, Instagram Menu, X } from 'lucide-react'
+import { Calendar, MapPin, DollarSign, Star, MessageCircle, Instagram, Menu, X } from 'lucide-react'
 
 export default function ThaiTestimonials() {
   const router = useRouter()

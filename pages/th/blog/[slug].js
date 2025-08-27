@@ -459,7 +459,6 @@ export default function ThaiBlogPost() {
                 </div>
               </div>
             )}
-            </div>
           </div>
         </nav>
         
