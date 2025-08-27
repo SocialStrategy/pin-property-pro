@@ -191,11 +191,6 @@ export default function EnglishContact() {
                   
                   {contactMethods.map((method, index) => {
                     const IconComponent = method.icon
-                    const colorClasses = {
-                      green: method.primary ? 'border-green-400 bg-green-50 bg-green-600 text-green-600 hover:text-green-700' : 'bg-gray-100 text-gray-600',
-                      purple: 'bg-gray-100 text-gray-600 text-purple-600 hover:text-purple-700',
-                      blue: 'bg-gray-100 text-gray-600 text-blue-600 hover:text-blue-700'
-                    }
                     
                     return (
                       <a key={index} href={method.link} target="_blank" rel="noopener noreferrer" className={`block bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:md:scale-105 cursor-pointer ${method.primary ? 'border-2 border-green-400 bg-green-50' : 'border border-gray-200'}`}>

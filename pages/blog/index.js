@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 import Link from 'next/link'
 
 export default function Blog() {
@@ -90,7 +91,7 @@ export default function Blog() {
                 <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
-              <div className="flex items-center space-x-6">
+              <div className="hidden md:flex items-center space-x-6">
                 <Link href={`/${locale || 'en'}/blog`} className="text-red-600 font-semibold">
                   Blog
                 </Link>

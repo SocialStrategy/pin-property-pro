@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 import Link from 'next/link'
-import { Calendar, MapPin, DollarSign, Star, MessageCircle, Instagram } from 'lucide-react'
+import { Calendar, MapPin, DollarSign, Star, MessageCircle, Instagram Menu, X } from 'lucide-react'
 
 export default function Testimonials() {
   const router = useRouter()
   const locale = router.asPath.startsWith('/th') ? 'th' : 'en'
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
   const t = {
     en: {
@@ -182,7 +184,7 @@ export default function Testimonials() {
                 <span className="text-lg sm:text-xl font-bold text-gray-900">Pin Property Pro</span>
               </Link>
               
-              <div className="flex items-center space-x-6">
+              <div className="hidden md:flex items-center space-x-6">
                 <Link href={locale === 'th' ? '/th/blog' : '/blog'} className="text-gray-700 hover:text-red-600">
                   {locale === 'th' ? 'บล็อก' : 'Blog'}
                 </Link>

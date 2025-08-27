@@ -100,7 +100,60 @@ export default function Areas() {
                   </Link>
                 </div>
               </div>
+
+              {/* Mobile menu button */}
+              <div className="md:hidden">
+                <button
+                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                  className="text-gray-700 hover:text-red-600 focus:outline-none focus:text-red-600"
+                >
+                  {mobileMenuOpen ? (
+                    <X className="h-6 w-6" />
+                  ) : (
+                    <Menu className="h-6 w-6" />
+                  )}
+                </button>
+              </div>
             </div>
+
+            {/* Mobile Navigation Menu */}
+            {mobileMenuOpen && (
+              <div className="md:hidden">
+                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
+                  <Link 
+                    href={`/${locale || 'en'}/blog`} 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Blog
+                  </Link>
+                  <Link 
+                    href={`/${locale || 'en'}/areas`} 
+                    className="block px-3 py-2 text-red-600 bg-red-50 rounded-md font-semibold"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Areas
+                  </Link>
+                  <Link 
+                    href={`/${locale || 'en'}/contact`} 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Contact
+                  </Link>
+                  
+                  {/* Mobile Language Toggle */}
+                  <div className="flex items-center gap-2 px-3 py-2">
+                    <Link href="/areas" className={`px-3 py-1 rounded text-sm ${locale === 'en' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
+                      🇬🇧 EN
+                    </Link>
+                    <Link href="/th/areas" className={`px-3 py-1 rounded text-sm ${locale === 'th' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
+                      🇹🇭 TH
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </nav>
         
