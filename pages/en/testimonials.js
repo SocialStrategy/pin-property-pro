@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Calendar, MapPin, DollarSign, Star, MessageCircle, Instagram, Menu, X } from 'lucide-react'
 
@@ -8,6 +8,19 @@ export default function Testimonials() {
   const router = useRouter()
   const locale = router.asPath.startsWith('/th') ? 'th' : 'en'
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setMobileMenuOpen(false)
+    }
+    
+    router.events.on('routeChangeStart', handleRouteChange)
+    
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange)
+    }
+  }, [router])
   
   const t = {
     en: {
