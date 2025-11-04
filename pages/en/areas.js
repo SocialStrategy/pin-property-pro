@@ -119,8 +119,8 @@ export default function EnglishAreas() {
       <Head>
         <title>{content.title}</title>
         <meta name="description" content={content.description} />
-        <link rel="alternate" hrefLang="en" href="https://pin-property-pro.vercel.app/en/areas" />
-        <link rel="alternate" hrefLang="th" href="https://pin-property-pro.vercel.app/th/areas" />
+        <link rel="alternate" hrefLang="en" href="https://pinpropertypro.com/en/areas" />
+        <link rel="alternate" hrefLang="th" href="https://pinpropertypro.com/th/areas" />
       </Head>
       
       <div className="min-h-screen" style={{background: 'linear-gradient(to bottom, #F9F9DC, #F5F5D0)'}}>

@@ -357,8 +357,8 @@ export default function ThaiBlogPost() {
       <Head>
         <title>{post.title} | Pin Property Pro</title>
         <meta name="description" content={post.excerpt} />
-        <link rel="alternate" hrefLang="en" href={`https://pin-property-pro.vercel.app/en/blog/${slug}`} />
-        <link rel="alternate" hrefLang="th" href={`https://pin-property-pro.vercel.app/th/blog/${slug}`} />
+        <link rel="alternate" hrefLang="en" href={`https://pinpropertypro.com/en/blog/${slug}`} />
+        <link rel="alternate" hrefLang="th" href={`https://pinpropertypro.com/th/blog/${slug}`} />
       </Head>
       
       <div className="min-h-screen" style={{background: 'linear-gradient(to bottom, #F9F9DC, #F5F5D0)'}}>

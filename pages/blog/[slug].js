@@ -782,9 +782,9 @@ export default function BlogPost() {
       <Head>
         <title>{content.title}</title>
         <meta name="description" content={content.content.substring(0, 160) + '...'} />
-        <link rel="alternate" hrefLang="en" href={`https://pin-property-pro.vercel.app/en/blog/${slug}`} />
-        <link rel="alternate" hrefLang="th" href={`https://pin-property-pro.vercel.app/th/blog/${slug}`} />
-        <link rel="alternate" hrefLang="x-default" href={`https://pin-property-pro.vercel.app/blog/${slug}`} />
+        <link rel="alternate" hrefLang="en" href={`https://pinpropertypro.com/en/blog/${slug}`} />
+        <link rel="alternate" hrefLang="th" href={`https://pinpropertypro.com/th/blog/${slug}`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://pinpropertypro.com/blog/${slug}`} />
       </Head>
       
       <div className="min-h-screen" style={{background: 'linear-gradient(to bottom, #F9F9DC, #F5F5D0)'}}>

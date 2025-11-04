@@ -58,7 +58,7 @@
 
 After deployment, you'll have:
 - **GitHub Repository**: `https://github.com/yourusername/pin-property-pro`
-- **Live Website**: `https://pin-property-pro.vercel.app` (or custom domain)
+- **Live Website**: `https://pinpropertypro.com` (or custom domain)
 
 ## 💡 Pro Tips
 

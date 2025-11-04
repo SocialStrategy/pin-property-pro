@@ -43,7 +43,7 @@ Run this command:
 
 ### **Live Website URLs:**
 - **GitHub Repository**: https://github.com/SocialStrategy/pin-property-pro
-- **Live Website**: https://pin-property-pro.vercel.app (or custom domain)
+- **Live Website**: https://pinpropertypro.com (or custom domain)
 
 ### **Modern Features:**
 - ✅ **Instagram Integration**: @pin.propertypro prominently featured

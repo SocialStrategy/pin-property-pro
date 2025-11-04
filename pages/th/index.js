@@ -60,9 +60,9 @@ export default function ThaiHome() {
       <Head>
         <title>{content.title}</title>
         <meta name="description" content={content.description} />
-        <link rel="alternate" hrefLang="en" href="https://pin-property-pro.vercel.app/en/" />
-        <link rel="alternate" hrefLang="th" href="https://pin-property-pro.vercel.app/th/" />
-        <link rel="alternate" hrefLang="x-default" href="https://pin-property-pro.vercel.app/en/" />
+        <link rel="alternate" hrefLang="en" href="https://pinpropertypro.com/en/" />
+        <link rel="alternate" hrefLang="th" href="https://pinpropertypro.com/th/" />
+        <link rel="alternate" hrefLang="x-default" href="https://pinpropertypro.com/en/" />
       </Head>
       
       <div className="min-h-screen" style={{background: 'linear-gradient(to bottom, #F9F9DC, #F5F5D0)'}}>
