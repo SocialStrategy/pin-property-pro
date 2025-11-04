@@ -210,7 +210,7 @@ export default function ThaiAreas() {
                   
                   {/* Mobile Language Toggle */}
                   <div className="flex items-center gap-2 px-3 py-2">
-                    <Link href="/areas" className="px-3 py-1 rounded text-gray-700 text-sm">
+                    <Link href="/en/areas" className="px-3 py-1 rounded text-gray-700 text-sm">
                       🇬🇧 EN
                     </Link>
                     <Link href="/th/areas" className="px-3 py-1 rounded bg-red-600 text-white text-sm">

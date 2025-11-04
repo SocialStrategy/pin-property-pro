@@ -154,7 +154,7 @@ export default function Areas() {
                   
                   {/* Mobile Language Toggle */}
                   <div className="flex items-center gap-2 px-3 py-2">
-                    <Link href="/areas" className={`px-3 py-1 rounded text-sm ${locale === 'en' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
+                    <Link href="/en/areas" className={`px-3 py-1 rounded text-sm ${locale === 'en' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
                       🇬🇧 EN
                     </Link>
                     <Link href="/th/areas" className={`px-3 py-1 rounded text-sm ${locale === 'th' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>

@@ -198,22 +198,22 @@ export default function Testimonials() {
               </Link>
               
               <div className="hidden md:flex items-center space-x-6">
-                <Link href={locale === 'th' ? '/th/blog' : '/blog'} className="text-gray-700 hover:text-red-600">
+                <Link href={locale === 'th' ? '/th/blog' : '/en/blog'} className="text-gray-700 hover:text-red-600">
                   {locale === 'th' ? 'บล็อก' : 'Blog'}
                 </Link>
-                <Link href={locale === 'th' ? '/th/areas' : '/areas'} className="text-gray-700 hover:text-red-600">
+                <Link href={locale === 'th' ? '/th/areas' : '/en/areas'} className="text-gray-700 hover:text-red-600">
                   {locale === 'th' ? 'พื้นที่' : 'Areas'}
                 </Link>
-                <Link href={locale === 'th' ? '/th/testimonials' : '/testimonials'} className="text-gray-700 hover:text-red-600 font-semibold">
+                <Link href={locale === 'th' ? '/th/testimonials' : '/en/testimonials'} className="text-gray-700 hover:text-red-600 font-semibold">
                   {locale === 'th' ? 'คำรับรอง' : 'Testimonials'}
                 </Link>
-                <Link href={locale === 'th' ? '/th/contact' : '/contact'} className="text-gray-700 hover:text-red-600">
+                <Link href={locale === 'th' ? '/th/contact' : '/en/contact'} className="text-gray-700 hover:text-red-600">
                   {locale === 'th' ? 'ติดต่อ' : 'Contact'}
                 </Link>
                 
                 {/* Language Toggle */}
                 <div className="flex items-center gap-2">
-                  <Link href="/testimonials" className={`px-3 py-1 rounded ${locale === 'en' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
+                  <Link href="/en/testimonials" className={`px-3 py-1 rounded ${locale === 'en' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
                     🇬🇧 EN
                   </Link>
                   <Link href="/th/testimonials" className={`px-3 py-1 rounded ${locale === 'th' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
@@ -242,28 +242,28 @@ export default function Testimonials() {
               <div className="md:hidden">
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
                   <Link 
-                    href={locale === 'th' ? '/th/blog' : '/blog'} 
+                    href={locale === 'th' ? '/th/blog' : '/en/blog'} 
                     className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {locale === 'th' ? 'บล็อก' : 'Blog'}
                   </Link>
                   <Link 
-                    href={locale === 'th' ? '/th/areas' : '/areas'} 
+                    href={locale === 'th' ? '/th/areas' : '/en/areas'} 
                     className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {locale === 'th' ? 'พื้นที่' : 'Areas'}
                   </Link>
                   <Link 
-                    href={locale === 'th' ? '/th/testimonials' : '/testimonials'} 
+                    href={locale === 'th' ? '/th/testimonials' : '/en/testimonials'} 
                     className="block px-3 py-2 text-red-600 bg-red-50 rounded-md font-semibold"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {locale === 'th' ? 'คำรับรอง' : 'Testimonials'}
                   </Link>
                   <Link 
-                    href={locale === 'th' ? '/th/contact' : '/contact'} 
+                    href={locale === 'th' ? '/th/contact' : '/en/contact'} 
                     className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -272,7 +272,7 @@ export default function Testimonials() {
                   
                   {/* Mobile Language Toggle */}
                   <div className="flex items-center gap-2 px-3 py-2">
-                    <Link href="/testimonials" className={`px-3 py-1 rounded text-sm ${locale === 'en' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
+                    <Link href="/en/testimonials" className={`px-3 py-1 rounded text-sm ${locale === 'en' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
                       🇬🇧 EN
                     </Link>
                     <Link href="/th/testimonials" className={`px-3 py-1 rounded text-sm ${locale === 'th' ? 'bg-red-600 text-white' : 'text-gray-700'}`}>
@@ -358,7 +358,7 @@ export default function Testimonials() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href={locale === 'th' ? '/th/contact' : '/contact'} className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transform hover:md:scale-105 transition-all duration-300 text-center">
+                <Link href={locale === 'th' ? '/th/contact' : '/en/contact'} className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transform hover:md:scale-105 transition-all duration-300 text-center">
                   <MessageCircle className="w-5 h-5 inline mr-2" />
                   {locale === 'th' ? 'เริ่มต้นการเดินทางของคุณ' : 'Start Your Journey'}
                 </Link>

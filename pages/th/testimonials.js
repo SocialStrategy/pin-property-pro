@@ -149,7 +149,7 @@ export default function ThaiTestimonials() {
                 
                 {/* Language Toggle */}
                 <div className="flex items-center gap-2">
-                  <Link href="/testimonials" className="px-3 py-1 rounded text-gray-700">
+                  <Link href="/en/testimonials" className="px-3 py-1 rounded text-gray-700">
                     🇬🇧 EN
                   </Link>
                   <Link href="/th/testimonials" className="px-3 py-1 rounded bg-red-600 text-white">
@@ -208,7 +208,7 @@ export default function ThaiTestimonials() {
                   
                   {/* Mobile Language Toggle */}
                   <div className="flex items-center gap-2 px-3 py-2">
-                    <Link href="/testimonials" className="px-3 py-1 rounded text-gray-700 text-sm">
+                    <Link href="/en/testimonials" className="px-3 py-1 rounded text-gray-700 text-sm">
                       🇬🇧 EN
                     </Link>
                     <Link href="/th/testimonials" className="px-3 py-1 rounded bg-red-600 text-white text-sm">
