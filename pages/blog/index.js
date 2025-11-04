@@ -98,6 +98,9 @@ export default function Blog() {
                 <Link href={`/${locale || 'en'}/areas`} className="text-gray-700 hover:text-red-600">
                   Areas
                 </Link>
+                <Link href={`/${locale || 'en'}/testimonials`} className="text-gray-700 hover:text-red-600">
+                  Testimonials
+                </Link>
                 <Link href={`/${locale || 'en'}/contact`} className="text-gray-700 hover:text-red-600">
                   Contact
                 </Link>

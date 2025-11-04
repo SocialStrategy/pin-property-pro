@@ -806,6 +806,9 @@ export default function BlogPost() {
                 <Link href={`/${locale || 'en'}/areas`} className="text-gray-700 hover:text-red-600">
                   Areas
                 </Link>
+                <Link href={`/${locale || 'en'}/testimonials`} className="text-gray-700 hover:text-red-600">
+                  Testimonials
+                </Link>
                 <Link href={`/${locale || 'en'}/contact`} className="text-gray-700 hover:text-red-600">
                   Contact
                 </Link>
@@ -853,6 +856,13 @@ export default function BlogPost() {
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Areas
+                  </Link>
+                  <Link 
+                    href={`/${locale || 'en'}/testimonials`} 
+                    className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Testimonials
                   </Link>
                   <Link 
                     href={`/${locale || 'en'}/contact`} 
